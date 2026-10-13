@@ -25,6 +25,11 @@ Very little public onchain analysis exists on sterling stablecoins. This project
 
 🚧 In progress — started October 2026.
 
+🚧 In progress — started October 2026.
+
+- **Phase 1 (done):** manual verification of six GBP stablecoins across five blockchains. See [Key Findings](FINDINGS.md), the [research logbook](LOGBOOK.md) and the [token register](data/gbp_stablecoin_register.csv).
+- **Phase 2 (next):** on-chain analysis and a public dashboard on Dune.
+
 ## Author
 
 **Vijetasingh Rajput** — London, UK
