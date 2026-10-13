@@ -46,3 +46,29 @@ A dated record of what was found, how it was verified, and decisions taken.
 | Ethereum holders | 2 | 309 |
 | Top-10 share | 100% | 96% |
 | Decimals | 6 | 18 |
+
+
+**Verification: GBPe (Monerium GBP e-money)**
+- Gnosis contract: 0x8e34bfec4f6eb781f9743d9b4af99cd23f9b7053, 18 decimals.
+- Triangulated across three sources: CoinGecko, Gnosisscan, and Monerium's official token documentation (docs.monerium.com/tokens).
+- Monerium docs also list GBPe on Ethereum, Polygon and Arbitrum. This project currently tracks Gnosis only.
+- CoinGecko notes the token recently migrated to a new contract. An older address (0x5Cb9073902F2035222B9749F8fB0c9BFe5527108) appears on a third-party site; not verified as official. Dune tables must be checked against the new contract before use.
+- Legal model: issued as an e-money token. This differs from tGBP, whose issuer states it is not e-money.
+- Supply: ~505K GBPe (~$670K). Smallest of the three coins reviewed.
+- Activity: 1,302 holders and 203,735 transfers on Gnosis, far more than GBPA or tGBP on Ethereum, despite the smallest supply.
+- Hypothesis: high transfer count may reflect card payments (e.g., Gnosis Pay). To be tested with Dune data.
+- Data quality note: CoinGecko shows an all-time high of $53.28, almost certainly a thin-liquidity glitch; excluded from analysis.
+- Evidence: [Gnosisscan screenshot](evidence/2026-10-13_gbpe_gnosisscan_verification.png) · [Monerium docs screenshot](evidence/2026-10-13_gbpe_monerium_docs.png)
+
+**Updated comparison (13 Oct 2026)**
+
+| | GBPA | tGBP | GBPe |
+|---|---|---|---|
+| Issuer | Agant | BCP Technologies Ltd | Monerium |
+| Main chain checked | Ethereum | Ethereum | Gnosis |
+| Supply (chain checked) | ~1.0M | ~14.3M | ~505K |
+| Holders (chain checked) | 2 | 309 | 1,302 |
+| Decimals | 6 | 18 | 18 |
+| Legal model | Not yet checked | Not e-money (MLR registration) | E-money |
+
+**Key pattern:** size and usage do not match. The largest coin (tGBP) shows low activity; the smallest (GBPe) shows the most transfers.
