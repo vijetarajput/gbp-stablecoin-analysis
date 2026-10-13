@@ -109,3 +109,36 @@ A dated record of what was found, how it was verified, and decisions taken.
 | Issuer | Agant | BCP Technologies Ltd | Monerium | Unconfirmed | VNX Global Ltd |
 | Jurisdiction / model | Not yet checked | UK, MLR registration, not e-money | E-money | Unknown | Bermuda licence |
 | Chain checked | Ethereum |
+
+
+**Verification: GBPm (Mento British Pound, formerly cGBP)**
+- Search for "Celo British Pound" on CoinGecko returned nothing. Further search showed the token was renamed.
+- Celo contract: 0xccf663b1ff11028f0b19058d0f7b674004a40746, 18 decimals. Address matched across GeckoTerminal, a third-party listing, and Celoscan.
+- Rename confirmed on Celoscan: banner states Celo stablecoins have rebranded into Mento (cGBP → GBPm). Website: mento.org.
+- Model: no company issuer. DefiLlama describes GBPm as a GBP-pegged synthetic stablecoin minted through CDPs, with USDm deposited as collateral. Category: crypto-backed.
+- Supply: ~234.6K on Celo (Celoscan and DefiLlama live page agree). DefiLlama's chart shows supply fell from roughly 450K–500K in April 2026 to ~234K now.
+- Holders: 307. Total transfers: 61,971.
+- Activity: the main GeckoTerminal pool (cGBP/USDT, Uniswap V3 on Celo) showed $0 trading volume in the last 24 hours; most recent trades were on 8 October.
+- Source quality lesson: a search snippet suggested ~88.5K on Celo and ~173K on Monad. The live DefiLlama page and Celoscan both show ~234.6K on Celo. The snippet was outdated. Always open the live page.
+- Search lesson: GeckoTerminal results for "cGBP" also returned unrelated Solana pools whose addresses happen to start with "CGBP". Matching letters is not evidence.
+- Evidence: [Celoscan screenshot](evidence/2026-10-13_gbpm_celoscan_verification.png) · [DefiLlama model screenshot](evidence/2026-10-13_gbpm_defillama_model.png)
+
+**Coins reviewed (13 Oct 2026)**
+
+| | GBPA | tGBP | GBPe | poundtoken (1GBP) | VGBP | GBPm |
+|---|---|---|---|---|---|---|
+| Issuer | Agant | BCP Technologies Ltd | Monerium | Unconfirmed | VNX Global Ltd | None (Mento Protocol) |
+| Model | Not yet checked | UK MLR registration, not e-money | E-money | Unknown | Bermuda licence | Crypto-backed CDP |
+| Chain checked | Ethereum | Ethereum | Gnosis | Ethereum | Solana | Celo |
+| Supply (chain checked) | ~1.0M | ~14.3M | ~505K | ~45.8K | ~72.7K | ~234.6K |
+| Holders (chain checked) | 2 | 309 | 1,302 | 177 | 572 | 307 |
+| Decimals | 6 | 18 | 18 | 18 | 9 | 18 |
+| Status | Active, concentrated | Active, low usage | Active, many transfers | Dormant | Active, bot-dominated | Shrinking, low trading |
+
+**Patterns (updated)**
+1. Size and usage do not match.
+2. Some GBP stablecoins launch and go quiet; others shrink.
+3. Supply is concentrated in a few wallets.
+4. Four distinct models exist: UK-registered fiat-backed, e-money, offshore-licensed, and decentralised crypto-backed.
+5. Transfer counts alone are misleading because of bot activity.
+6. Data sources often disagree or go stale; on-chain explorers and live pages are the reference.
