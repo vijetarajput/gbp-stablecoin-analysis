@@ -22,4 +22,5 @@ A dated record of what was found, how it was verified, and decisions taken.
 **Verification: GBPA (Agant GBP)**
 - Ethereum contract: 0xbbe6aab0ed76e90aea0d1cd978ec231c8adcdf8b
 - Confirmed on Etherscan: name "Agant GBP", symbol GBPA, 6 decimals, linked to agant.io/gbpa.
-- Observation: ~1.0M GBPA on Ethereum held by only 2 addresses. Supply is highly concentrated; broad adoption not yet visible.
+- Observation: ~1.0M GBPA on Ethereum held by only 2 addresses. Etherscan reports whale concentration of 99.99%, meaning a single address holds almost the entire Ethereum supply. Broad adoption is not yet visible on Ethereum.
+- Evidence: [Etherscan screenshot](evidence/2026-10-13_gbpa_etherscan_verification.png) · [Live Etherscan page](https://etherscan.io/token/0xbbe6aab0ed76e90aea0d1cd978ec231c8adcdf8b)
