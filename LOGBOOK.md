@@ -142,3 +142,13 @@ A dated record of what was found, how it was verified, and decisions taken.
 4. Four distinct models exist: UK-registered fiat-backed, e-money, offshore-licensed, and decentralised crypto-backed.
 5. Transfer counts alone are misleading because of bot activity.
 6. Data sources often disagree or go stale; on-chain explorers and live pages are the reference.
+
+
+**Update: GBPA regulatory status**
+- Issuer footer on agant.io names Agant Finance Limited, registered with the FCA as a cryptoasset firm under the Money Laundering Regulations 2017 (FRN 1037671).
+- The issuer states that GBPA services are not covered by the Financial Services Compensation Scheme (FSCS) or the Financial Ombudsman Service (FOS).
+- The footer does not state whether GBPA is e-money, so no claim is made either way.
+- This resolves the "Not yet checked" entry for GBPA in earlier tables. Model: UK MLR registration (same category as tGBP).
+- Evidence: [Agant footer screenshot](evidence/2026-10-13_gbpa_agant_issuer_footer.png)
+
+**Regulatory observation:** both UK-based issuers reviewed (Agant and BCP Technologies) operate under anti-money-laundering registration only, and neither product is covered by the FSCS. This is the protection gap that the Bank of England's proposed regime for systemic sterling stablecoins aims to address.
