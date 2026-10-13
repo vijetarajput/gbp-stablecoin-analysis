@@ -87,3 +87,25 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Evidence: [Etherscan screenshot](evidence/2026-10-13_1gbp_poundtoken_etherscan.png) · [poundtoken.io homepage](evidence/2026-10-13_poundtoken_io_homepage.png) · [poundtoken.io "not an issuer" section](evidence/2026-10-13_poundtoken_io_not_issuer.png)
 
 **Second pattern:** some GBP stablecoins launch and then go quiet. Launching a sterling stablecoin is not the same as achieving adoption.
+
+
+**Verification: VGBP (VNX British Pound)**
+- Solana token: 5H4voZhzySsVvwVYDAKku8MZGuYBC7cXaBKDPW4YHWW1, 9 decimals (different again from GBPA's 6 and tGBP/GBPe's 18).
+- Issuer: VNX Global Ltd, licensed by the Bermuda Monetary Authority (Class M digital asset business licence), per CoinGecko. First offshore issuer found in this project.
+- First mint: 20 December 2024 (Solscan).
+- Supply: ~72.7K on Solana out of ~126.6K total (CoinGecko). Remaining ~54K appears to be on other chains, not yet identified.
+- Holders on Solana: 572. Total transfers: 265,177.
+- Activity check: recent transfers are tiny ($0.12–$0.26), repeat the same wallets, and loop between DEX pools (Raydium, Meteora) via an aggregator. This pattern is consistent with arbitrage bots rather than real payments.
+- 24h trading volume: ~$5.65 (CoinGecko coin page).
+- Source conflict: CoinGecko's GBP category summary described VGBP at $1.43 with $509K daily volume. The coin page shows $1.34 and $5.65. The coin page and on-chain data were used.
+- Evidence: [Solscan overview](evidence/2026-10-13_vgbp_solscan_1.png) · [Solscan transfers](evidence/2026-10-13_vgbp_solscan_2.png) · [CoinGecko overview](evidence/2026-10-13_vgbp_coingecko_issuer_1.png) · [CoinGecko issuer description](evidence/2026-10-13_vgbp_coingecko_issuer_2.png)
+
+**Methodology lesson:** raw transfer counts can be inflated by bots. High transfer numbers do not prove real usage. The GBPe "payments" hypothesis must be tested with this in mind (e.g., by separating DEX/bot activity from wallet-to-wallet or card-related flows).
+
+**Coins reviewed so far (13 Oct 2026)**
+
+| | GBPA | tGBP | GBPe | poundtoken (1GBP) | VGBP |
+|---|---|---|---|---|---|
+| Issuer | Agant | BCP Technologies Ltd | Monerium | Unconfirmed | VNX Global Ltd |
+| Jurisdiction / model | Not yet checked | UK, MLR registration, not e-money | E-money | Unknown | Bermuda licence |
+| Chain checked | Ethereum |
