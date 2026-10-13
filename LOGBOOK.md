@@ -72,3 +72,18 @@ A dated record of what was found, how it was verified, and decisions taken.
 | Legal model | Not yet checked | Not e-money (MLR registration) | E-money |
 
 **Key pattern:** size and usage do not match. The largest coin (tGBP) shows low activity; the smallest (GBPe) shows the most transfers.
+
+
+**Check: poundtoken (1GBP), possible successor of GBPT**
+- Background: GBPT ("poundtoken") was launched in July 2022 by Blackfridge (Isle of Man), per press coverage at the time. No recent news found.
+- Not listed on CoinGecko (search for "poundtoken" returned no results).
+- Etherscan search found a token named "poundtoken" with symbol 1GBP (not GBPT): 0x86b4dbe5d203e634a12364c0e428fa242a3fba98, 18 decimals.
+- Supply ~45.8K on Ethereum, 177 holders, 3,088 total transfers.
+- Activity: last transfer ~67 days ago; previous ones ~77 and ~148 days ago. The token is effectively dormant.
+- Etherscan token information is unverified ("?" icon), unlike GBPA and tGBP.
+- The website linked on Etherscan (poundtoken.io) now hosts a UK crypto information site that explicitly states it is not an issuer. This suggests the original project's domain is no longer controlled by the issuer.
+- Status: DORMANT. Link to the original Blackfridge GBPT is unconfirmed.
+- Source quality lesson: a 2026 exchange blog post described GBPT as one of the most popular GBP stablecoins. On-chain and CoinGecko evidence does not support this claim.
+- Evidence: [Etherscan screenshot](evidence/2026-10-13_1gbp_poundtoken_etherscan.png) · [poundtoken.io homepage](evidence/2026-10-13_poundtoken_io_homepage.png) · [poundtoken.io "not an issuer" section](evidence/2026-10-13_poundtoken_io_not_issuer.png)
+
+**Second pattern:** some GBP stablecoins launch and then go quiet. Launching a sterling stablecoin is not the same as achieving adoption.
