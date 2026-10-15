@@ -180,3 +180,11 @@ A dated record of what was found, how it was verified, and decisions taken.
   - tGBP amounts are divided by 1e6, but the verified contract uses 18 decimals.
   - Weekly SUM of balance snapshots may overstate supply if the source tables are daily.
 - Methods to reuse: mint/burn supply from tokens.transfers; raw logs with the ERC-20 Transfer topic for chains without decoded tables (applicable to Gnosis/GBPe).
+
+
+**Verification: VGBP on Base and Celo**
+- Base: 0xaeb4bb7debd1e5e82266f7c3b5cff56b3a7bf411, VNX British Pound (VGBP), 18 decimals, ~25,299 supply, 287 holders, website vnx.io (Basescan).
+- Celo: 0x7ae4265ecfc1f31bc0e112dfcfe3d78e01f4bb7f, VNX British Pound (VGBP), 18 decimals, ~28,606 supply, 20 holders, 1,123 transfers; most recent transfers 14 and 86 days ago (Celoscan).
+- Decimals differ by chain for the same token (9 on Solana, 18 on Base and Celo). Queries must take decimals per chain, not per token.
+- Reconciliation: Solana 72,689.71 + Base 25,299.32 + Celo 28,606.18 = 126,595.21, matching CoinGecko's total supply of 126,595. This confirms VGBP is deployed on exactly these three chains.
+- Evidence: [Basescan screenshot](evidence/2026-10-15_vgbp_base_basescan.png) · [Celoscan screenshot](evidence/2026-10-15_vgbp_celo_celoscan.png)
