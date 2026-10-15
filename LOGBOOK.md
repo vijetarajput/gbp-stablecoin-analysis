@@ -102,13 +102,7 @@ A dated record of what was found, how it was verified, and decisions taken.
 
 **Methodology lesson:** raw transfer counts can be inflated by bots. High transfer numbers do not prove real usage. The GBPe "payments" hypothesis must be tested with this in mind (e.g., by separating DEX/bot activity from wallet-to-wallet or card-related flows).
 
-**Coins reviewed so far (13 Oct 2026)**
-
-| | GBPA | tGBP | GBPe | poundtoken (1GBP) | VGBP |
-|---|---|---|---|---|---|
-| Issuer | Agant | BCP Technologies Ltd | Monerium | Unconfirmed | VNX Global Ltd |
-| Jurisdiction / model | Not yet checked | UK, MLR registration, not e-money | E-money | Unknown | Bermuda licence |
-| Chain checked | Ethereum |
+*(Five-coin summary superseded by the six-coin table below.)*
 
 
 **Verification: GBPm (Mento British Pound, formerly cGBP)**
