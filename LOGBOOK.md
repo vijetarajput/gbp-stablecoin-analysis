@@ -188,3 +188,13 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Decimals differ by chain for the same token (9 on Solana, 18 on Base and Celo). Queries must take decimals per chain, not per token.
 - Reconciliation: Solana 72,689.71 + Base 25,299.32 + Celo 28,606.18 = 126,595.21, matching CoinGecko's total supply of 126,595. This confirms VGBP is deployed on exactly these three chains.
 - Evidence: [Basescan screenshot](evidence/2026-10-15_vgbp_base_basescan.png) · [Celoscan screenshot](evidence/2026-10-15_vgbp_celo_celoscan.png)
+
+
+**Dune tables: GBPe (migration confirmed)**
+- Search "monerium" returned two GBPe transfer tables on Gnosis, both maintained by @dune.
+- monerium_gbpe_v2_gnosis.gbpe_evt_transfer: table preview shows contract_address 0x8e34bfec4f6eb781f9743d9b4af99cd23f9b7053, the current contract verified on 13 Oct.
+- monerium_gbpe_gnosis.gbp_evt_transfer: table preview shows contract_address 0x5cb9073902f2035222b9749f8fb0c9bfe5527108, the older address previously seen only on a third-party site. This confirms it as the pre-migration contract.
+- Full GBPe supply history will need both tables (v1 before migration, v2 after).
+- Clue for the payments hypothesis: in both tables, many transactions are submitted by the same sender, 0x90830ed5... (evt_tx_from). This pattern is consistent with a relayer service submitting transactions on users' behalf, as card-payment products often do. To identify on Gnosisscan.
+- Idea: Monerium also issues EURe on several chains. Comparing GBPe and EURe (same issuer and technology, different currency) may isolate currency-specific demand.
+- Evidence: [v2 table](evidence/2026-10-15_gbpe_v2_dune_table.png) · [v1 table](evidence/2026-10-15_gbpe_v1_dune_table.png)
