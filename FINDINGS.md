@@ -2,7 +2,7 @@
 
 A summary of what the verification phase found. Full details, sources and evidence are in the [LOGBOOK](LOGBOOK.md) and the [register](data/gbp_stablecoin_register.csv).
 
-*Status: preliminary, based on manual verification (13–15 October 2026). On-chain analysis with Dune is the next phase.*
+*Status: preliminary, based on manual verification and public market data (13–15 October 2026). On-chain analysis with Dune is the next phase.*
 
 ---
 
@@ -22,7 +22,7 @@ Total GBP stablecoin market capitalisation was roughly $31.8M on CoinGecko's cat
 
 ## 3. Size and usage do not match
 
-The largest token (tGBP, ~20M supply) trades about $67K per day, around 0.25% of supply. The smallest active token (GBPe, ~505K supply) shows the most holders (1,302) and transfers (203,735) on its main chain.
+The largest token (tGBP, ~20M supply) traded on average ~$82K per day over the past year (~0.42% of market cap per day; ~0.76% over the last 30 days). The smallest active token (GBPe, ~505K supply) shows the most holders (1,302) and transfers (203,735) on its main chain. A single-day snapshot (~$67K) used earlier understated this variation; averages are used instead.
 
 ## 4. Supply is highly concentrated
 
@@ -47,6 +47,10 @@ VGBP is deployed on Solana (9 decimals), Base and Celo (18 decimals each). Summi
 ## 9. Public data sources and dashboards contain errors
 
 Market caps, volumes, issuer names and supply figures differed across CoinGecko pages, third-party sites and search snippets. An existing public Dune dashboard on GBP stablecoins (@duneuk) appears to use a mistyped tGBP contract address and incorrect decimals in its supply query (to be confirmed by running the query), and does not cover GBPA, GBPe or VGBP on Solana. Blockchain explorers and official issuer pages were used as the reference throughout.
+
+## 10. tGBP grew in a few large steps, not gradually
+
+CoinGecko daily data (Nov 2025 – Oct 2026) shows tGBP supply rising from ~1.1M to a peak of ~25.5M in mid-2026, then falling to ~20M. Almost all change happened on six days, including a ~19% drop (~£5M redeemed) on 8 August 2026. This step pattern points to a few large institutional mints and redemptions, consistent with the high holder concentration in Finding 4. USD market cap also moves with the GBP/USD exchange rate, so supply is measured in GBP. Daily data: [data/coingecko_tgbp_daily_2025-11-12_to_2026-10-15.csv](data/coingecko_tgbp_daily_2025-11-12_to_2026-10-15.csv)
 
 ---
 
