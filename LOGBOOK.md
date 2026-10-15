@@ -168,3 +168,15 @@ A dated record of what was found, how it was verified, and decisions taken.
 
 **Dune tables: tGBP**
 - Search "tgbp" returned decoded tables under tgbp_ethereum.stabletokenv1oft_*. "OFT" indicates a LayerZero Omnichain Fungible Token, consistent with tGBP's presence on 8 chains. evt_oftreceived records cross-chain arrivals.
+
+
+**Review of @duneuk "GBP Supply Tracking" query (dune.com/queries/6276583)**
+- Forked from @0nchainlabs. Covers GBPT and VGBP (Base) via a balances template, GBPT via tokens_ethereum.balances, tGBP via mint/burn in tokens.transfers, and VGBP + GBPm on Celo via raw celo.logs.
+- Correction to earlier note: GBPm (Celo) is included in this query. Not included: GBPA, GBPe (Gnosis), and VGBP on Solana.
+- New address found: VGBP on Celo, 0x7ae4265ecfc1f31bc0e112dfcfe3d78e01f4bb7f (to verify). VGBP on Base: 0xaeb4bb7debd1e5e82266f7c3b5cff56b3a7bf411 (to verify).
+- The query labels 0x86b4...fba98 as GBPT, supporting (but not proving) that the "poundtoken (1GBP)" contract is the original Blackfridge GBPT.
+- Potential data-quality issues (to confirm by running the query):
+  - tGBP contract address appears mistyped: "...bedf1519966..." instead of the verified "...bed1f519966...".
+  - tGBP amounts are divided by 1e6, but the verified contract uses 18 decimals.
+  - Weekly SUM of balance snapshots may overstate supply if the source tables are daily.
+- Methods to reuse: mint/burn supply from tokens.transfers; raw logs with the ERC-20 Transfer topic for chains without decoded tables (applicable to Gnosis/GBPe).
