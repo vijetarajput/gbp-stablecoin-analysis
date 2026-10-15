@@ -152,3 +152,19 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Evidence: [Agant footer screenshot](evidence/2026-10-13_gbpa_agant_issuer_footer.png)
 
 **Regulatory observation:** both UK-based issuers reviewed (Agant and BCP Technologies) operate under anti-money-laundering registration only, and neither product is covered by the FSCS. This is the protection gap that the Bank of England's proposed regime for systemic sterling stablecoins aims to address.
+
+
+---
+
+## 15 October 2026
+
+**Correction: existing GBP stablecoin dashboard found**
+- A Dune search for "tgbp" surfaced "Stablecoin Analysis: British Sterling Pound" by @duneuk (dune.com/duneuk/stablecoin-analysis-british-sterling-pound), last updated about two months earlier. It did not appear in the earlier "GBP" search.
+- It covers GBPT, VGBP, TGBP and a token labelled "CCBP" (likely cGBP), with weekly supply, DEX volume, active addresses, comparison with USD/EUR stablecoins, and lending/borrowing. Its lending section concludes GBP stablecoins are largely absent from DeFi lending.
+- This corrects the 13 October note that no comprehensive GBP dashboard existed.
+- Remaining gaps this project addresses: newer tokens (GBPA, GBPe, GBPm), issuer and legal-model verification, holder concentration, separation of bot activity from genuine use, dormant tokens (GBPT appears dormant), and links to the digital pound debate.
+- The @duneuk work will be cited as related work.
+- Evidence: [@duneuk dashboard screenshot](evidence/2026-10-15_duneuk_gbp_dashboard.png)
+
+**Dune tables: tGBP**
+- Search "tgbp" returned decoded tables under tgbp_ethereum.stabletokenv1oft_*. "OFT" indicates a LayerZero Omnichain Fungible Token, consistent with tGBP's presence on 8 chains. evt_oftreceived records cross-chain arrivals.
