@@ -206,3 +206,18 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Interpretation: consistent with a Gnosis Pay relayer submitting card payments on users' behalf. Based on one sampled transaction; the share of payments among all GBPe transfers was not measured.
 - Contrast with VGBP: the ten most recent VGBP transfers on Solana (13 Oct) were tiny DEX loops consistent with bots, whereas the sampled GBPe activity is payment-like.
 - Evidence: [transaction](evidence/2026-10-16_gbpe_relayer_tx.png) · [relayer address](evidence/2026-10-16_gbpe_relayer_address.png)
+
+
+
+**tGBP market data (CoinGecko, 12 Nov 2025 – 15 Oct 2026)**
+- Downloaded daily market capitalization, volume, and closing price from CoinGecko's historical data page. Saved as [data/coingecko_tgbp_daily_2025-11-12_to_2026-10-15.csv](data/coingecko_tgbp_daily_2025-11-12_to_2026-10-15.csv).
+- Implied supply (market cap ÷ closing price) rose from ~1.1M tokens (Nov 2025) to a peak of ~25.5M (mid-2026), then fell to ~20M.
+- Almost all change occurred on six days: 3 Dec 2025, 1 Mar, 24 Mar, 21 Apr, 14 Jul, and 8 Aug 2026. On 8 Aug, supply fell ~19% (~£5M redeemed). This step pattern suggests a few large institutional mints and redemptions.
+- USD market cap also moves with the GBP/USD exchange rate, so supply is measured in tokens (≈ GBP), not USD.
+- First two days (market cap not tracked) and the final partial day were excluded.
+
+**Corrections and additions**
+- tGBP trading volume: the 13 Oct figure (~$67K/day, ~0.25% of supply) was a single-day snapshot. Averages from the daily data are ~0.42% of market cap per day over the year and ~0.76% over the last 30 days. Averages are used from now on.
+- GBPA total supply: about 1.9M tokens across all chains, per the @rchen8 community dashboard (dune.com/rchen8/gbpa); ~1.0M of this is on Ethereum. Used for the market-size total of ~$30.2M.
+- @duneuk query: the tGBP address mismatch (two transposed characters) and the 1e6 divisor are visible directly in the query text, so they are confirmed as written. Only their effect on the dashboard's outputs remains untested.
+- VGBP bot assessment: based on the ten most recent transfers shown on Solscan on 13 Oct, not a full-period analysis.
