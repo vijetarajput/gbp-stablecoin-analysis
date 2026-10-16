@@ -192,3 +192,17 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Clue for the payments hypothesis: in both tables, many transactions are submitted by the same sender, 0x90830ed5... (evt_tx_from). This pattern is consistent with a relayer service submitting transactions on users' behalf, as card-payment products often do. To identify on Gnosisscan.
 - Idea: Monerium also issues EURe on several chains. Comparing GBPe and EURe (same issuer and technology, different currency) may isolate currency-specific demand.
 - Evidence: [v2 table](evidence/2026-10-15_gbpe_v2_dune_table.png) · [v1 table](evidence/2026-10-15_gbpe_v1_dune_table.png)
+
+
+---
+
+## 16 October 2026
+
+**GBPe relayer investigation**
+- Opened a sampled GBPe v2 transaction on Gnosisscan: 0x56f98cd1d3a473655fd25ae55c64f6e56e2f4ca55a80cfe10af07067cb23df2d (block 45736440, 18 April 2026).
+- The explorer tags the transaction "Gnosis Pay". The sender, 0x90830Ed558f12D826370DC52E9D87947A7F18De9, called a contract labelled "Spender Module".
+- Transfer: 6.34 GBPe (about $8.43) from a user Safe wallet to a GnosisSafeL2 address. The explorer labels the user wallet "Gnosis Pay Compromised Safe 16775"; the meaning of this label was not investigated and it is not used in the analysis.
+- The sender is an externally owned account (EOA) with 3,914,470 transactions and about 193 xDAI held for gas fees. No explorer label.
+- Interpretation: consistent with a Gnosis Pay relayer submitting card payments on users' behalf. Based on one sampled transaction; the share of payments among all GBPe transfers was not measured.
+- Contrast with VGBP: the ten most recent VGBP transfers on Solana (13 Oct) were tiny DEX loops consistent with bots, whereas the sampled GBPe activity is payment-like.
+- Evidence: [transaction](evidence/2026-10-16_gbpe_relayer_tx.png) · [relayer address](evidence/2026-10-16_gbpe_relayer_address.png)
