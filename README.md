@@ -4,9 +4,9 @@ On-chain analysis of UK sterling (GBP) stablecoins — supply, adoption and paym
 
 ## Why this project
 
-The Bank of England is deciding whether to build a digital pound (a central bank digital currency), while also preparing rules for sterling stablecoins issued by private companies. A key concern is that people may move towards US dollar stablecoins instead of pound-based ones.
+The Bank of England is deciding whether to build a digital pound (a central bank digital currency), while also preparing rules for sterling stablecoins issued by private companies. Dollar-denominated stablecoins dominate the global stablecoin market, which raises the question of what role, if any, sterling stablecoins currently play.
 
-Public on-chain analysis of sterling stablecoins is limited. An existing community dashboard on Dune covers some tokens and DEX activity; this project adds newer tokens, issuer and regulatory verification, holder concentration, bot-versus-genuine usage, and a reproducible token register.
+Public on-chain analysis of sterling stablecoins is limited. An existing community dashboard on Dune covers some tokens and DEX activity; this project adds newer tokens, issuer and regulatory verification, holder concentration, bot-versus-payment usage, and a reproducible token register.
 
 ## Research questions
 
@@ -25,8 +25,8 @@ Public on-chain analysis of sterling stablecoins is limited. An existing communi
 
 🚧 In progress — started October 2026.
 
-- **Phase 1 (done):** verification of six GBP stablecoins across five blockchains, plus one year of tGBP market data. See [Key Findings](FINDINGS.md), the [research logbook](LOGBOOK.md) and the [token register](data/gbp_stablecoin_register.csv).
-- **Phase 2 (next):** on-chain analysis and a public dashboard on Dune.
+- **Phase 1 (done):** verification of six GBP stablecoins across five blockchains, one year of tGBP market data, and sampled checks of usage (bot-like activity in VGBP; card-payment activity via Gnosis Pay in GBPe). See [Key Findings](FINDINGS.md), the [research logbook](LOGBOOK.md) and the [token register](data/gbp_stablecoin_register.csv).
+- **Phase 2 (next):** transaction-level analysis and a public dashboard on Dune.
 
 ## Author
 
