@@ -221,3 +221,12 @@ A dated record of what was found, how it was verified, and decisions taken.
 - GBPA total supply: about 1.9M tokens across all chains, per the @rchen8 community dashboard (dune.com/rchen8/gbpa); ~1.0M of this is on Ethereum. Used for the market-size total of ~$30.2M.
 - @duneuk query: the tGBP address mismatch (two transposed characters) and the 1e6 divisor are visible directly in the query text, so they are confirmed as written. Only their effect on the dashboard's outputs remains untested.
 - VGBP bot assessment: based on the ten most recent transfers shown on Solscan on 13 Oct, not a full-period analysis.
+
+
+
+**GBPe payment share (sample of 100 transfers)**
+- Copied the 100 most recent GBPe transfers from Gnosisscan's token transfer list on 16 Oct 2026 (about 17 hours of activity). Saved as [data/gnosisscan_gbpe_recent_100_transfers_2026-10-16.csv](data/gnosisscan_gbpe_recent_100_transfers_2026-10-16.csv).
+- 47 transfers (47 of 72 distinct transactions, 65%) used method 0x8a320255, the same Spender Module call as the transaction tagged "Gnosis Pay". All moved GBPe from a user Safe to a settlement Safe. Median amount 11 GBPe; total ~2,459 GBPe.
+- In three cases, a CoW Protocol settlement of the same amount (10.7, 34.99, 66.75 GBPe) shortly preceded the payment, suggesting users converted other assets into GBPe just before spending.
+- Other transfers were DEX and aggregator trades (CoW, LiFi, Uniswap, RelayRouter); 24 were dust transfers below 0.001 GBPe, similar to bot activity seen for VGBP.
+- Limitation: classification relies on the method identifier matching the sampled Gnosis Pay transaction; covers 17 hours only.
