@@ -2,7 +2,7 @@
 
 A summary of what the verification phase found. Full details, sources and evidence are in the [LOGBOOK](LOGBOOK.md) and the [register](data/gbp_stablecoin_register.csv).
 
-*Status: preliminary, based on manual verification and public market data (13–16 October 2026). Transaction-level analysis with Dune is the next phase.*
+*Status: preliminary, based on manual verification and public market data (13–17 October 2026). Transaction-level analysis with Dune is the next phase.*
 
 ---
 
@@ -34,7 +34,7 @@ poundtoken (1GBP) has had only a handful of transfers in five months, and its li
 
 ## 6. Transfer counts are not a reliable measure of use
 
-VGBP shows 265K transfers on Solana, but the ten most recent transfers inspected were tiny, repeated DEX loops consistent with arbitrage bots. GBPe shows a different pattern: many of its transactions are submitted by a single automated address (over 3.9 million transactions), and a sampled transaction was tagged "Gnosis Pay" and executed through a "Spender Module", moving 6.34 GBPe from a user wallet. In a sample of the 100 most recent GBPe transfers (16 Oct 2026, about 17 hours), 65% of distinct transactions used the same Gnosis Pay "Spender Module" method, with a median amount of 11 GBPe, typical of everyday card spending; 24 transfers were dust-sized, similar to bot activity. This is consistent with card payments being the main use of GBPe, although the sample covers less than one day. Transfer counts alone are therefore not a reliable measure of use. Sample data: [data/gnosisscan_gbpe_recent_100_transfers_2026-10-16.csv](data/gnosisscan_gbpe_recent_100_transfers_2026-10-16.csv)
+VGBP shows 265K transfers on Solana, but the ten most recent transfers inspected were tiny, repeated DEX loops consistent with arbitrage bots. GBPe shows a different pattern: many of its transactions are submitted by a single automated address (over 3.9 million transactions), and a sampled transaction was tagged "Gnosis Pay" and executed through a "Spender Module", moving 6.34 GBPe from a user wallet. In a sample of the 100 most recent GBPe transfers (17 Oct 2026, about 17 hours), 65% of distinct transactions used the same Gnosis Pay "Spender Module" method, with a median amount of 11 GBPe, typical of everyday card spending; 24 transfers were dust-sized, similar to bot activity. This is consistent with card payments being the main use of GBPe, although the sample covers less than one day. Transfer counts alone are therefore not a reliable measure of use. Sample data: [data/gnosisscan_gbpe_recent_100_transfers_2026-10-17.csv](data/gnosisscan_gbpe_recent_100_transfers_2026-10-17.csv)
 
 ## 7. Consumer protection gap
 
