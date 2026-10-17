@@ -219,3 +219,16 @@ A dated record of what was found, how it was verified, and decisions taken.
 - In three cases, a CoW Protocol settlement of the same amount (10.7, 34.99, 66.75 GBPe) shortly preceded the payment, suggesting users converted other assets into GBPe just before spending.
 - Other transfers were DEX and aggregator trades (CoW, LiFi, Uniswap, RelayRouter); 24 were dust transfers below 0.001 GBPe, similar to bot activity seen for VGBP.
 - Limitation: classification relies on the method identifier matching the sampled Gnosis Pay transaction; covers 17 hours only.
+
+
+
+**GBPe card payments over 12 months (full-period analysis)**
+- Collected all GBPe v2 transfers on Gnosis from the public Blockscout API using Google Colab (Dune query creation is not available on the free plan). Window: 17 Oct 2025 – 16 Oct 2026. 501 duplicate rows from API pagination were removed, leaving 84,382 transfers in 67,494 distinct transactions.
+- Data: [data/gbpe_v2_transfers_12m.csv](data/gbpe_v2_transfers_12m.csv) · Monthly summary: [data/gbpe_monthly_card_payments_2025-10_to_2026-10.csv](data/gbpe_monthly_card_payments_2025-10_to_2026-10.csv) · Scripts: [scripts/](scripts/)
+- Card payments (method 0x8a320255, Gnosis Pay Spender Module): 52,662 transactions, 78% of all GBPe transactions (79% excluding dust). All were sent to a single settlement address.
+- 488 distinct wallets made card payments; 347 made 10 or more. The top 10 wallets accounted for only 14% of payments, in contrast to the high concentration of token holdings.
+- Median card payment 11 GBPe; total ~3.0M GBPe over the year. By value, card payments were only 13% of non-mint/burn transfer volume, because trades are larger.
+- Trend: monthly card payments fell 59% between Nov 2025 and Sep 2026; active paying wallets fell 39% from their Dec 2025 peak (206) to Sep 2026 (125).
+- Monerium minted ~3.1M and burned ~3.1M GBPe over the year, about six times the outstanding supply, indicating active on/off-ramping.
+- Correction: the "swap immediately before payment" pattern seen in three cases of the 100-transfer sample occurred in only 29 of 52,662 payments (0.1%) over the full year. It is not a meaningful pattern and is no longer claimed.
+- Evidence: [figure](evidence/fig_gbpe_card_payments.png)
