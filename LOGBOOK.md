@@ -24,8 +24,7 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Confirmed on Etherscan: name "Agant GBP", symbol GBPA, 6 decimals, linked to agant.io/gbpa.
 - Observation: ~1.0M GBPA on Ethereum held by only 2 addresses. Etherscan reports whale concentration of 99.99%, meaning a single address holds almost the entire Ethereum supply. Broad adoption is not yet visible on Ethereum.
 - Evidence: [Etherscan screenshot](evidence/2026-10-13_gbpa_etherscan_verification.png) · [Live Etherscan page](https://etherscan.io/token/0xbbe6aab0ed76e90aea0d1cd978ec231c8adcdf8b)
-  
-  
+
 **Verification: tGBP (Tokenised GBP)**
 - Ethereum contract: 0x27f6c8289550fce67f6b50bed1f519966afe5287 (found via CoinGecko, confirmed on Etherscan).
 - Name tGBP, 18 decimals (GBPA uses 6, so supply queries must divide by 1e18, not 1e6).
@@ -46,7 +45,6 @@ A dated record of what was found, how it was verified, and decisions taken.
 | Ethereum holders | 2 | 309 |
 | Top-10 share | 100% | 96% |
 | Decimals | 6 | 18 |
-
 
 **Verification: GBPe (Monerium GBP e-money)**
 - Gnosis contract: 0x8e34bfec4f6eb781f9743d9b4af99cd23f9b7053, 18 decimals.
@@ -73,7 +71,6 @@ A dated record of what was found, how it was verified, and decisions taken.
 
 **Key pattern:** size and usage do not match. The largest coin (tGBP) shows low activity; the smallest (GBPe) shows the most transfers.
 
-
 **Check: poundtoken (1GBP), possible successor of GBPT**
 - Background: GBPT ("poundtoken") was launched in July 2022 by Blackfridge (Isle of Man), per press coverage at the time. No recent news found.
 - Not listed on CoinGecko (search for "poundtoken" returned no results).
@@ -87,7 +84,6 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Evidence: [Etherscan screenshot](evidence/2026-10-13_1gbp_poundtoken_etherscan.png) · [poundtoken.io homepage](evidence/2026-10-13_poundtoken_io_homepage.png) · [poundtoken.io "not an issuer" section](evidence/2026-10-13_poundtoken_io_not_issuer.png)
 
 **Second pattern:** some GBP stablecoins launch and then go quiet. Launching a sterling stablecoin is not the same as achieving adoption.
-
 
 **Verification: VGBP (VNX British Pound)**
 - Solana token: 5H4voZhzySsVvwVYDAKku8MZGuYBC7cXaBKDPW4YHWW1, 9 decimals (different again from GBPA's 6 and tGBP/GBPe's 18).
@@ -103,7 +99,6 @@ A dated record of what was found, how it was verified, and decisions taken.
 **Methodology lesson:** raw transfer counts can be inflated by bots. High transfer numbers do not prove real usage. The GBPe "payments" hypothesis must be tested with this in mind (e.g., by separating DEX/bot activity from wallet-to-wallet or card-related flows).
 
 *(Five-coin summary superseded by the six-coin table below.)*
-
 
 **Verification: GBPm (Mento British Pound, formerly cGBP)**
 - Search for "Celo British Pound" on CoinGecko returned nothing. Further search showed the token was renamed.
@@ -137,7 +132,6 @@ A dated record of what was found, how it was verified, and decisions taken.
 5. Transfer counts alone are misleading because of bot activity.
 6. Data sources often disagree or go stale; on-chain explorers and live pages are the reference.
 
-
 **Update: GBPA regulatory status**
 - Issuer footer on agant.io names Agant Finance Limited, registered with the FCA as a cryptoasset firm under the Money Laundering Regulations 2017 (FRN 1037671).
 - The issuer states that GBPA services are not covered by the Financial Services Compensation Scheme (FSCS) or the Financial Ombudsman Service (FOS).
@@ -146,7 +140,6 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Evidence: [Agant footer screenshot](evidence/2026-10-13_gbpa_agant_issuer_footer.png)
 
 **Regulatory observation:** both UK-based issuers reviewed (Agant and BCP Technologies) operate under anti-money-laundering registration only, and neither product is covered by the FSCS. This is the protection gap that the Bank of England's proposed regime for systemic sterling stablecoins aims to address.
-
 
 ---
 
@@ -163,7 +156,6 @@ A dated record of what was found, how it was verified, and decisions taken.
 **Dune tables: tGBP**
 - Search "tgbp" returned decoded tables under tgbp_ethereum.stabletokenv1oft_*. "OFT" indicates a LayerZero Omnichain Fungible Token, consistent with tGBP's presence on 8 chains. evt_oftreceived records cross-chain arrivals.
 
-
 **Review of @duneuk "GBP Supply Tracking" query (dune.com/queries/6276583)**
 - Forked from @0nchainlabs. Covers GBPT and VGBP (Base) via a balances template, GBPT via tokens_ethereum.balances, tGBP via mint/burn in tokens.transfers, and VGBP + GBPm on Celo via raw celo.logs.
 - Correction to earlier note: GBPm (Celo) is included in this query. Not included: GBPA, GBPe (Gnosis), and VGBP on Solana.
@@ -175,14 +167,12 @@ A dated record of what was found, how it was verified, and decisions taken.
   - Weekly SUM of balance snapshots may overstate supply if the source tables are daily.
 - Methods to reuse: mint/burn supply from tokens.transfers; raw logs with the ERC-20 Transfer topic for chains without decoded tables (applicable to Gnosis/GBPe).
 
-
 **Verification: VGBP on Base and Celo**
 - Base: 0xaeb4bb7debd1e5e82266f7c3b5cff56b3a7bf411, VNX British Pound (VGBP), 18 decimals, ~25,299 supply, 287 holders, website vnx.io (Basescan).
 - Celo: 0x7ae4265ecfc1f31bc0e112dfcfe3d78e01f4bb7f, VNX British Pound (VGBP), 18 decimals, ~28,606 supply, 20 holders, 1,123 transfers; most recent transfers 14 and 86 days ago (Celoscan).
 - Decimals differ by chain for the same token (9 on Solana, 18 on Base and Celo). Queries must take decimals per chain, not per token.
 - Reconciliation: Solana 72,689.71 + Base 25,299.32 + Celo 28,606.18 = 126,595.21, matching CoinGecko's total supply of 126,595. This confirms VGBP is deployed on exactly these three chains.
 - Evidence: [Basescan screenshot](evidence/2026-10-15_vgbp_base_basescan.png) · [Celoscan screenshot](evidence/2026-10-15_vgbp_celo_celoscan.png)
-
 
 **Dune tables: GBPe (migration confirmed)**
 - Search "monerium" returned two GBPe transfer tables on Gnosis, both maintained by @dune.
@@ -192,7 +182,6 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Clue for the payments hypothesis: in both tables, many transactions are submitted by the same sender, 0x90830ed5... (evt_tx_from). This pattern is consistent with a relayer service submitting transactions on users' behalf, as card-payment products often do. To identify on Gnosisscan.
 - Idea: Monerium also issues EURe on several chains. Comparing GBPe and EURe (same issuer and technology, different currency) may isolate currency-specific demand.
 - Evidence: [v2 table](evidence/2026-10-15_gbpe_v2_dune_table.png) · [v1 table](evidence/2026-10-15_gbpe_v1_dune_table.png)
-
 
 ---
 
@@ -207,8 +196,6 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Contrast with VGBP: the ten most recent VGBP transfers on Solana (13 Oct) were tiny DEX loops consistent with bots, whereas the sampled GBPe activity is payment-like.
 - Evidence: [transaction](evidence/2026-10-16_gbpe_relayer_tx.png) · [relayer address](evidence/2026-10-16_gbpe_relayer_address.png)
 
-
-
 **tGBP market data (CoinGecko, 12 Nov 2025 – 15 Oct 2026)**
 - Downloaded daily market capitalization, volume, and closing price from CoinGecko's historical data page. Saved as [data/coingecko_tgbp_daily_2025-11-12_to_2026-10-15.csv](data/coingecko_tgbp_daily_2025-11-12_to_2026-10-15.csv).
 - Implied supply (market cap ÷ closing price) rose from ~1.1M tokens (Nov 2025) to a peak of ~25.5M (mid-2026), then fell to ~20M.
@@ -222,10 +209,12 @@ A dated record of what was found, how it was verified, and decisions taken.
 - @duneuk query: the tGBP address mismatch (two transposed characters) and the 1e6 divisor are visible directly in the query text, so they are confirmed as written. Only their effect on the dashboard's outputs remains untested.
 - VGBP bot assessment: based on the ten most recent transfers shown on Solscan on 13 Oct, not a full-period analysis.
 
+---
 
+## 17 October 2026
 
 **GBPe payment share (sample of 100 transfers)**
-- Copied the 100 most recent GBPe transfers from Gnosisscan's token transfer list on 16 Oct 2026 (about 17 hours of activity). Saved as [data/gnosisscan_gbpe_recent_100_transfers_2026-10-16.csv](data/gnosisscan_gbpe_recent_100_transfers_2026-10-16.csv).
+- Copied the 100 most recent GBPe transfers from Gnosisscan's token transfer list on 17 Oct 2026 (about 17 hours of activity). Saved as [data/gnosisscan_gbpe_recent_100_transfers_2026-10-17.csv](data/gnosisscan_gbpe_recent_100_transfers_2026-10-17.csv).
 - 47 transfers (47 of 72 distinct transactions, 65%) used method 0x8a320255, the same Spender Module call as the transaction tagged "Gnosis Pay". All moved GBPe from a user Safe to a settlement Safe. Median amount 11 GBPe; total ~2,459 GBPe.
 - In three cases, a CoW Protocol settlement of the same amount (10.7, 34.99, 66.75 GBPe) shortly preceded the payment, suggesting users converted other assets into GBPe just before spending.
 - Other transfers were DEX and aggregator trades (CoW, LiFi, Uniswap, RelayRouter); 24 were dust transfers below 0.001 GBPe, similar to bot activity seen for VGBP.
