@@ -26,7 +26,7 @@ Public on-chain analysis of sterling stablecoins is limited. An existing communi
 
 🚧 In progress — started October 2026.
 
-- **Phase 1 (done):** verification of six GBP stablecoins across five blockchains, one year of tGBP market data, and sampled checks of usage: bot-like activity in VGBP, and card payments via Gnosis Pay in GBPe (65% of transactions in a sample of 100 recent transfers). See [Key Findings](FINDINGS.md), the [research logbook](LOGBOOK.md) and the [token register](data/gbp_stablecoin_register.csv).
+- **Phase 1 (done):** verification of six GBP stablecoins across five blockchains, one year of tGBP market data, and sampled checks of usage: bot-like activity in VGBP, and card payments via Gnosis Pay in GBPe (78% of transactions over 12 months). See [Key Findings](FINDINGS.md), the [research logbook](LOGBOOK.md) and the [token register](data/gbp_stablecoin_register.csv).
 - **Phase 2 (next):** transaction-level analysis and a public dashboard on Dune.
 
 ## Author
