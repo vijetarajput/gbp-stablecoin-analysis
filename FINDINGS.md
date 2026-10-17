@@ -30,15 +30,15 @@ On Ethereum, GBPA has 2 holders and one address holds ~99.99% of supply. tGBP ha
 
 ## 5. Some tokens stall or shrink
 
-poundtoken (1GBP) has had only a handful of transfers in five months, and its listed website no longer belongs to an issuer. A public Dune query labels this contract as GBPT. GBPm supply roughly halved between April and October 2026. VGBP's Celo deployment has 20 holders and very few recent transfers.
+poundtoken (1GBP) has had only a handful of transfers in five months, and its listed website no longer belongs to an issuer. A public Dune query labels this contract as GBPT. GBPm supply roughly halved between April and October 2026. VGBP's Celo deployment has 20 holders and very few recent transfers. This is consistent with research showing that many stablecoins fail or fade over time (Mizrach, 2023).
 
 ## 6. Transfer counts are not a reliable measure of use
 
-VGBP shows 265K transfers on Solana, but the ten most recent transfers inspected were tiny, repeated DEX loops consistent with arbitrage bots. GBPe shows the opposite pattern: most of its activity is card payments (Finding 11). The same headline metric, transfer count, therefore hides very different kinds of use.
+VGBP shows 265K transfers on Solana, but the ten most recent transfers inspected were tiny, repeated DEX loops consistent with arbitrage bots, a well-documented feature of decentralized exchanges (Daian et al., 2020). GBPe shows the opposite pattern: most of its activity is card payments (Finding 11). The same headline metric, transfer count, therefore hides very different kinds of use.
 
 ## 7. Consumer protection gap
 
-Both UK-based issuers reviewed operate under anti-money-laundering registration only. Neither GBPA nor tGBP is covered by the FSCS, and GBPA's issuer states it is also outside the Financial Ombudsman Service.
+Both UK-based issuers reviewed operate under anti-money-laundering registration only. Neither GBPA nor tGBP is covered by the FSCS, and GBPA's issuer states it is also outside the Financial Ombudsman Service. The FCA published final rules for qualifying stablecoin issuers in June 2026, but they apply only to firms authorised under the new regime from 25 October 2027. By contrast, under the EU's MiCA regulation, e-money tokens must be issued by banks or e-money institutions and be redeemable at par at any time.
 
 ## 8. Multi-chain tokens need per-chain verification
 
@@ -54,7 +54,7 @@ CoinGecko daily data (Nov 2025 – Oct 2026) shows tGBP supply rising from ~1.1M
 
 ## 11. GBPe is mainly used for card payments, but its user base is shrinking
 
-Across 67,494 GBPe transactions on Gnosis over 12 months (17 Oct 2025 – 16 Oct 2026), 78% were Gnosis Pay card payments, executed through the "Spender Module" and sent to a single settlement address. 488 wallets paid by card during the year, 347 of them ten times or more, and the top 10 wallets made only 14% of payments, so usage is broad even though token holdings elsewhere are concentrated. The median payment was 11 GBPe, typical of everyday spending. However, monthly card payments fell 59% between Nov 2025 and Sep 2026, and active paying wallets fell 39% from their December peak. By value, payments were only 13% of transfer volume, because trades are larger. Data: [data/gbpe_v2_transfers_12m.csv](data/gbpe_v2_transfers_12m.csv) · [monthly summary](data/gbpe_monthly_card_payments_2025-10_to_2026-10.csv) · [figure](evidence/fig_gbpe_card_payments.png)
+Across 67,494 GBPe transactions on Gnosis over 12 months (17 Oct 2025 – 16 Oct 2026), 78% were Gnosis Pay card payments, executed through the "Spender Module" and sent to a single settlement address. 488 wallets paid by card during the year, 347 of them ten times or more, and the top 10 wallets made only 14% of payments, so usage is broad even though token holdings elsewhere are concentrated. The median payment was 11 GBPe, typical of everyday spending. This is unusual: for dollar stablecoins, Visa's bot-adjusted data show retail-sized transactions were under 1% of adjusted volume in the year to March 2025. However, monthly GBPe card payments fell 59% between Nov 2025 and Sep 2026, and active paying wallets fell 39% from their December peak. By value, payments were only 13% of transfer volume, because trades are larger. Data: [data/gbpe_v2_transfers_12m.csv](data/gbpe_v2_transfers_12m.csv) · [monthly summary](data/gbpe_monthly_card_payments_2025-10_to_2026-10.csv) · [figure](evidence/fig_gbpe_card_payments.png)
 
 ---
 
@@ -67,4 +67,8 @@ Across 67,494 GBPe transactions on Gnosis over 12 months (17 Oct 2025 – 16 Oct
 
 ## Implications for the digital pound debate
 
-Private sterling stablecoins exist but remain small, concentrated and lightly used, and the UK-based ones currently offer limited consumer protection. Their uses also differ sharply: one token's activity looks bot-driven, while another is used mainly for everyday card payments by a small but recurring group of users. This shows that a sterling stablecoin can support real retail payments, but also that such use is currently tiny and not growing. This supports the case for clear regulation of sterling stablecoins, and raises the question of whether private stablecoins alone can provide the public-money role that a digital pound would serve.
+Private sterling stablecoins exist but remain small, concentrated and lightly used, and the UK-based ones currently offer limited consumer protection until the FCA's new regime applies in October 2027. Their uses also differ sharply: one token's activity looks bot-driven, while another is used mainly for everyday card payments by a small but recurring group of users. This shows that a sterling stablecoin can support real retail payments, but also that such use is currently tiny and not growing. This supports the case for clear regulation of sterling stablecoins, and raises the question of whether private stablecoins alone can provide the public-money role that a digital pound would serve.
+
+## Key sources
+
+Full references are listed in the LOGBOOK. Main sources: Mizrach (2023), arXiv:2201.01392 · Daian et al. (2020), doi:10.1109/SP40000.2020.00040 · FCA CP25/14 and final rules (June 2026) · Regulation (EU) 2023/1114 (MiCA) · Visa, "Making sense of stablecoins" (2025).
