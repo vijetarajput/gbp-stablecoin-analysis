@@ -1,0 +1,101 @@
+inspected_on,tx_hash,age,method,from,to,value_gbpe,category,dust_below_0.001
+2026-10-16,0xab27026a94...53d9,1h,settle,GP v2 Settlement,GnosisSafe,0.27557699,cow_settlement,False
+2026-10-16,0xab27026a94...53d9,1h,settle,SafeL2,GP v2 Settlement,0.2755717,cow_settlement,False
+2026-10-16,0xab27026a94...53d9,1h,settle,Vault,GP v2 Settlement,6.718e-05,cow_settlement,True
+2026-10-16,0x628ac614b7...bd2b,2h,0x8a320255,GnosisSafe,GnosisSafeL2,1.0,gnosis_pay_spender_module,False
+2026-10-16,0x817e3c2a5c...e46a,2h,0x8a320255,GnosisSafe,GnosisSafeL2,1.0,gnosis_pay_spender_module,False
+2026-10-16,0xc267e87984...fea3,2h,settle,GP v2 Settlement,Vault,0.00010331,cow_settlement,True
+2026-10-16,0xc267e87984...fea3,2h,settle,Vault,GP v2 Settlement,0.00010331,cow_settlement,True
+2026-10-16,0x145aa65c80...452b,2h,settle,GP v2 Settlement,GnosisSafe,10.7,cow_settlement,False
+2026-10-16,0x145aa65c80...452b,2h,settle,SafeL2,GP v2 Settlement,10.7,cow_settlement,False
+2026-10-16,0x3e26978713...08cc,3h,0x8a320255,GnosisSafe,GnosisSafeL2,10.7,gnosis_pay_spender_module,False
+2026-10-16,0xd6f07228f1...cd7f,3h,0x8a320255,GnosisSafe,GnosisSafeL2,5.99,gnosis_pay_spender_module,False
+2026-10-16,0xa4d079fbde...646b,4h,0x8a320255,GnosisSafe,GnosisSafeL2,12.0,gnosis_pay_spender_module,False
+2026-10-16,0x330c008d88...9931,4h,0x8a320255,GnosisSafe,GnosisSafeL2,2.9,gnosis_pay_spender_module,False
+2026-10-16,0x539f293c1c...d34e,5h,0x8a320255,GnosisSafe,GnosisSafeL2,238.76,gnosis_pay_spender_module,False
+2026-10-16,0x9e38f309d7...2185,5h,transfer,0x55...D2ec,GnosisSafe,240.0,other_transfer,False
+2026-10-16,0x38abb15386...5616,6h,0x8a320255,GnosisSafe,GnosisSafeL2,25.37,gnosis_pay_spender_module,False
+2026-10-16,0xb1df91410c...0f37,6h,0x8a320255,GnosisSafe,GnosisSafeL2,9.96,gnosis_pay_spender_module,False
+2026-10-16,0xb894dff694...b6a9,6h,0x8a320255,GnosisSafe,GnosisSafeL2,7.0,gnosis_pay_spender_module,False
+2026-10-16,0x8a8cf21aa0...9698,6h,0x8a320255,GnosisSafe,GnosisSafeL2,11.2,gnosis_pay_spender_module,False
+2026-10-16,0xcb676595f3...fda9,6h,0x8a320255,GnosisSafe,GnosisSafeL2,30.1,gnosis_pay_spender_module,False
+2026-10-16,0xf54444c7f6...428a,7h,0x8a320255,GnosisSafe,GnosisSafeL2,11.0,gnosis_pay_spender_module,False
+2026-10-16,0xfe5e461f21...f7d1,7h,0x8a320255,GnosisSafe,GnosisSafeL2,6.82,gnosis_pay_spender_module,False
+2026-10-16,0xf625b4d206...b4ee,8h,0x8a320255,GnosisSafe,GnosisSafeL2,950.0,gnosis_pay_spender_module,False
+2026-10-16,0xe8a86e6cc5...4cff,8h,swapTokensMultipleV3NativeToERC20,LiFi Diamond,GnosisSafe,0.39433664,dex_or_aggregator,False
+2026-10-16,0xe8a86e6cc5...4cff,8h,swapTokensMultipleV3NativeToERC20,UniswapV3Pool,LiFi Diamond,0.39433664,dex_or_aggregator,False
+2026-10-16,0xfed7507c3e...5a5b,8h,0x8a320255,GnosisSafe,GnosisSafeL2,10.3,gnosis_pay_spender_module,False
+2026-10-16,0xab6f1f85b2...70df,8h,0x8a320255,GnosisSafe,GnosisSafeL2,5.0,gnosis_pay_spender_module,False
+2026-10-16,0xd3309f2cb7...17ca,8h,swap,0xB4...Cd01,UniswapV3Pool,0.20383684,dex_or_aggregator,False
+2026-10-16,0xd3309f2cb7...17ca,8h,swap,0x36...1369,0xB4...Cd01,0.20383684,dex_or_aggregator,False
+2026-10-16,0xb5e4b3651c...42f3,9h,0x8a320255,GnosisSafe,GnosisSafeL2,9.8,gnosis_pay_spender_module,False
+2026-10-16,0x5da24f4d3b...af0d,9h,0x8a320255,GnosisSafe,GnosisSafeL2,17.93,gnosis_pay_spender_module,False
+2026-10-16,0x986ef21f57...8566,9h,0x8a320255,GnosisSafe,GnosisSafeL2,1.7,gnosis_pay_spender_module,False
+2026-10-16,0xd8f3a7ac89...a1c6,9h,0x0a2b8f36,RelayRouterV3,GnosisSafe,679.25230597,relay_router,False
+2026-10-16,0xd8f3a7ac89...a1c6,9h,0x0a2b8f36,0xB4...Cd01,RelayRouterV3,679.25230597,relay_router,False
+2026-10-16,0xd8f3a7ac89...a1c6,9h,0x0a2b8f36,0xB4...Cd01,0x36...1369,0.20383684,relay_router,False
+2026-10-16,0xd8f3a7ac89...a1c6,9h,0x0a2b8f36,UniswapV3Pool,0xB4...Cd01,679.45614281,relay_router,False
+2026-10-16,0xfe9aec1140...d92b,10h,0x8a320255,GnosisSafe,GnosisSafeL2,16.32,gnosis_pay_spender_module,False
+2026-10-16,0x23f1ea3e8f...d69f,10h,swapTokensMultipleV3NativeToERC20,LiFi Diamond,GnosisSafe,0.3525708,dex_or_aggregator,False
+2026-10-16,0x23f1ea3e8f...d69f,10h,swapTokensMultipleV3NativeToERC20,UniswapV3Pool,LiFi Diamond,0.3525708,dex_or_aggregator,False
+2026-10-16,0x6249d7a56b...c109,10h,0x8a320255,GnosisSafe,GnosisSafeL2,51.34,gnosis_pay_spender_module,False
+2026-10-16,0x8e26c7c177...3162,11h,0x8a320255,GnosisSafe,GnosisSafeL2,26.98,gnosis_pay_spender_module,False
+2026-10-16,0xedc6d279f5...d16e,11h,transfer,0xB1...6524,Vault,5.36e-06,other_transfer,True
+2026-10-16,0xedc6d279f5...d16e,11h,transfer,Vault,0xB1...6524,5.36e-06,other_transfer,True
+2026-10-16,0xba780195e4...d9ad,11h,0x8a320255,GnosisSafe,GnosisSafeL2,8.99,gnosis_pay_spender_module,False
+2026-10-16,0x1cb2a36679...d175,12h,0x8a320255,GnosisSafe,GnosisSafeL2,5.6,gnosis_pay_spender_module,False
+2026-10-16,0x20c03d5a40...daeb,12h,0x8a320255,GnosisSafe,GnosisSafeL2,34.61,gnosis_pay_spender_module,False
+2026-10-16,0x2c2b48a0ac...63bb,12h,0x8a320255,GnosisSafe,GnosisSafeL2,25.38,gnosis_pay_spender_module,False
+2026-10-16,0x6232275029...7521,13h,0x8a320255,GnosisSafe,GnosisSafeL2,66.07,gnosis_pay_spender_module,False
+2026-10-16,0x04b73cef00...dbc4,13h,0x8a320255,GnosisSafe,GnosisSafeL2,500.71,gnosis_pay_spender_module,False
+2026-10-16,0x57512fb41f...ce31,13h,transfer,0xB1...6524,Vault,8.48e-06,other_transfer,True
+2026-10-16,0x57512fb41f...ce31,13h,0xa9059cbb,UniswapV3Pool,0xB1...6524,8.48e-06,other_transfer,True
+2026-10-16,0x87a452d15d...8b5a,13h,0xa9059cbb,0xB1...6524,Vault,8.48e-06,other_transfer,True
+2026-10-16,0x87a452d15d...8b5a,13h,0xa9059cbb,UniswapV3Pool,0xB1...6524,8.48e-06,other_transfer,True
+2026-10-16,0x0e27cf5455...9c83,13h,0xa9059cbb,0xB1...6524,Vault,8.58e-06,other_transfer,True
+2026-10-16,0x0e27cf5455...9c83,13h,0xa9059cbb,UniswapV3Pool,0xB1...6524,8.58e-06,other_transfer,True
+2026-10-16,0xc5c1a51898...5595,13h,0xa9059cbb,0xB1...6524,Vault,8.309e-05,other_transfer,True
+2026-10-16,0xc5c1a51898...5595,13h,0xa9059cbb,Vault,0xB1...6524,8.309e-05,other_transfer,True
+2026-10-16,0x3d5d7accd7...632d,13h,0x8a320255,GnosisSafe,GnosisSafeL2,6.0,gnosis_pay_spender_module,False
+2026-10-16,0x5b1caba70d...34b9,13h,0xa9059cbb,0xB1...6524,Vault,8.83e-05,other_transfer,True
+2026-10-16,0x5b1caba70d...34b9,13h,0xa9059cbb,Vault,0xB1...6524,8.83e-05,other_transfer,True
+2026-10-16,0x16d9a8bfdd...57c0,13h,0xa9059cbb,0xB1...6524,Vault,9.963e-05,other_transfer,True
+2026-10-16,0x16d9a8bfdd...57c0,13h,0xa9059cbb,Vault,0xB1...6524,9.963e-05,other_transfer,True
+2026-10-16,0xd7609ccd19...89fa,13h,0xa9059cbb,0xB1...6524,Vault,1.811e-05,other_transfer,True
+2026-10-16,0xd7609ccd19...89fa,13h,0xa9059cbb,Vault,0xB1...6524,1.811e-05,other_transfer,True
+2026-10-16,0x28812504e3...bb23,13h,0x8a320255,GnosisSafe,GnosisSafeL2,0.85,gnosis_pay_spender_module,False
+2026-10-16,0x6227bc9422...af32,14h,0x736eac0b,LiFi Diamond,GnosisSafe,0.48528162,dex_or_aggregator,False
+2026-10-16,0x6227bc9422...af32,14h,0x736eac0b,UniswapV3Pool,LiFi Diamond,0.48528162,dex_or_aggregator,False
+2026-10-16,0xa9f3ea6f67...7e52,14h,0x8a320255,GnosisSafe,GnosisSafeL2,2.99,gnosis_pay_spender_module,False
+2026-10-16,0xc2233b8e70...1daf,14h,0x8a320255,GnosisSafe,GnosisSafeL2,3.24,gnosis_pay_spender_module,False
+2026-10-16,0xe943f41dcc...aec5,15h,0x8a320255,GnosisSafe,GnosisSafeL2,7.68,gnosis_pay_spender_module,False
+2026-10-16,0xb31af77808...99fe,15h,0x8a320255,GnosisSafe,GnosisSafeL2,13.57,gnosis_pay_spender_module,False
+2026-10-16,0x6916289936...5ebf,15h,0x8a320255,GnosisSafe,GnosisSafeL2,6.8,gnosis_pay_spender_module,False
+2026-10-16,0x78433e1b45...3ceb,15h,0x8a320255,GnosisSafe,GnosisSafeL2,1.5,gnosis_pay_spender_module,False
+2026-10-16,0xcc8639bc16...2bc6,15h,0x13d79a0b,GP v2 Settlement,GnosisSafe,34.99,cow_settlement,False
+2026-10-16,0xcc8639bc16...2bc6,15h,0x13d79a0b,SafeL2,GP v2 Settlement,34.99,cow_settlement,False
+2026-10-16,0x9d74cbec5d...bed3,15h,0x8a320255,GnosisSafe,GnosisSafeL2,34.99,gnosis_pay_spender_module,False
+2026-10-16,0x60fc574032...45d0,15h,0xa9059cbb,0xB1...6524,Vault,8.343e-05,other_transfer,True
+2026-10-16,0x60fc574032...45d0,15h,0xa9059cbb,UniswapV3Pool,0xB1...6524,8.343e-05,other_transfer,True
+2026-10-16,0xa029051e66...4029,15h,0x8cf1d7b1,0x1A...8256,Vault,0.0001846,dex_or_aggregator,True
+2026-10-16,0xa029051e66...4029,15h,0x8cf1d7b1,0x54...21cA,0x1A...8256,0.0001846,dex_or_aggregator,True
+2026-10-16,0xa029051e66...4029,15h,0x8cf1d7b1,UniswapV3Pool,0x54...21cA,0.0001846,dex_or_aggregator,True
+2026-10-16,0x283429d07c...bc70,15h,0x9008d19f,GP v2 Settlement,GnosisSafe,66.75,cow_settlement,False
+2026-10-16,0x283429d07c...bc70,15h,0x9008d19f,SafeL2,GP v2 Settlement,66.74796295,cow_settlement,False
+2026-10-16,0x283429d07c...bc70,15h,0x9008d19f,Vault,GP v2 Settlement,0.00203705,cow_settlement,False
+2026-10-16,0x4f4f893581...44bf,15h,0x8a320255,GnosisSafe,GnosisSafeL2,54.9,gnosis_pay_spender_module,False
+2026-10-16,0x9697e135e4...d4c3,15h,0x8a320255,GnosisSafe,GnosisSafeL2,66.75,gnosis_pay_spender_module,False
+2026-10-16,0xc28b2e3d77...01b3,15h,0x8a320255,GnosisSafe,GnosisSafeL2,2.5,gnosis_pay_spender_module,False
+2026-10-16,0xf3363ff7b5...8f85,16h,0x13d79a0b,GP v2 Settlement,GnosisSafe,0.27168139,cow_settlement,False
+2026-10-16,0xf3363ff7b5...8f85,16h,0x13d79a0b,SafeL2,GP v2 Settlement,0.27173631,cow_settlement,False
+2026-10-16,0x3a2a271e79...8b4b,16h,0x8a320255,GnosisSafe,GnosisSafeL2,31.0,gnosis_pay_spender_module,False
+2026-10-16,0x512bf07a05...ab8e,16h,0x8a320255,GnosisSafe,GnosisSafeL2,22.48,gnosis_pay_spender_module,False
+2026-10-16,0x8d26f67084...b425,16h,0x8a320255,GnosisSafe,GnosisSafeL2,41.88,gnosis_pay_spender_module,False
+2026-10-16,0xa6daf244ed...4bb7,17h,0x8a320255,GnosisSafe,GnosisSafeL2,24.0,gnosis_pay_spender_module,False
+2026-10-16,0xbed175a2e2...7f1c,17h,0x8a320255,GnosisSafe,GnosisSafeL2,31.91,gnosis_pay_spender_module,False
+2026-10-16,0x6a2f34626f...2543,17h,0x765e827f,SafeL2,GnosisSafe,4.4788,other_transfer,False
+2026-10-16,0xcc4af97583...97d3,17h,0x13d79a0b,GP v2 Settlement,SafeL2,4.4788,cow_settlement,False
+2026-10-16,0xcc4af97583...97d3,17h,0x13d79a0b,SafeL2,GP v2 Settlement,4.47969594,cow_settlement,False
+2026-10-16,0xca81ad863b...0e22,17h,0x8a320255,GnosisSafe,GnosisSafeL2,1.75,gnosis_pay_spender_module,False
+2026-10-16,0x7c7fe594eb...14b0,17h,0x13d79a0b,GP v2 Settlement,GnosisSafe,2249.18391543,cow_settlement,False
+2026-10-16,0x7c7fe594eb...14b0,17h,0x13d79a0b,SafeL2,GP v2 Settlement,2249.26087938,cow_settlement,False
