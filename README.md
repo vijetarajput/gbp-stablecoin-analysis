@@ -18,16 +18,16 @@ Public on-chain analysis of sterling stablecoins is limited. An existing communi
 ## Data and method
 
 - **Verification:** each token checked against blockchain explorers (Etherscan, Gnosisscan, Solscan, Basescan, Celoscan) and official issuer pages, with screenshots in [`evidence/`](evidence/).
-- **Market data:** daily CoinGecko data, saved in [`data/`](data/).
-- **Usage samples:** recent transfers copied from blockchain explorers and classified by transaction type (e.g., card payment, DEX trade, dust), saved in [`data/`](data/).
-- **On-chain analysis:** [Dune](https://dune.com) (DuneSQL). Queries will be published in a `queries/` folder so anyone can check and reuse them.
+- **Market data:** daily CoinGecko data for tGBP, saved in [`data/`](data/).
+- **Transfer data:** 12 months of GBPe transfers on Gnosis (84,000+ transfers), collected from the public Blockscout API and classified by transaction type (card payment, DEX trade, mint/burn, dust), saved in [`data/`](data/).
+- **Reproducibility:** Python scripts to collect and classify the transfer data are in [`scripts/`](scripts/) and can be run in Google Colab at no cost.
 
 ## Status
 
 🚧 In progress — started October 2026.
 
-- **Phase 1 (done):** verification of six GBP stablecoins across five blockchains, one year of tGBP market data, and sampled checks of usage: bot-like activity in VGBP, and card payments via Gnosis Pay in GBPe (78% of transactions over 12 months). See [Key Findings](FINDINGS.md), the [research logbook](LOGBOOK.md) and the [token register](data/gbp_stablecoin_register.csv).
-- **Phase 2 (next):** transaction-level analysis and a public dashboard on Dune.
+- **Phase 1 (done):** verification of six GBP stablecoins across five blockchains, one year of tGBP market data, and usage analysis: bot-like activity in VGBP, and card payments via Gnosis Pay in GBPe (78% of transactions over 12 months). See [Key Findings](FINDINGS.md), the [research logbook](LOGBOOK.md) and the [token register](data/gbp_stablecoin_register.csv).
+- **Phase 2 (next):** extend the transfer analysis to other tokens and chains, and investigate why GBPe card payments declined during 2026.
 
 ## Author
 
