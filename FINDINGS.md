@@ -2,7 +2,7 @@
 
 A summary of what the verification phase found. Full details, sources and evidence are in the [LOGBOOK](LOGBOOK.md) and the [register](data/gbp_stablecoin_register.csv).
 
-*Status: preliminary, based on manual verification and public market data (13–17 October 2026). Transaction-level analysis with Dune is the next phase.*
+*Status: based on manual verification, public market data, and a 12-month transfer dataset for GBPe (13–17 October 2026). Reproducible scripts are in [scripts/](scripts/).*
 
 ---
 
@@ -22,7 +22,7 @@ Total GBP stablecoin market capitalization was roughly $31.8M on CoinGecko's cat
 
 ## 3. Size and usage do not match
 
-The largest token (tGBP, ~20M supply) traded on average ~$82K per day over the past year (~0.42% of market cap per day; ~0.76% over the last 30 days). GBPe, with a supply of only ~505K, shows the largest holder count of the tokens reviewed (1,302 on Gnosis) and 203,735 transfers. A single-day snapshot (~$67K) used earlier understated this variation; averages are used instead.
+The largest token (tGBP, ~20M supply) traded on average ~$82K per day over the past year (~0.42% of market cap per day; ~0.76% over the last 30 days). GBPe, with a supply of only ~505K, shows the largest holder count of the tokens reviewed (1,302 on Gnosis) and the most everyday use (Finding 11). A single-day snapshot (~$67K) used earlier understated this variation; averages are used instead.
 
 ## 4. Supply is highly concentrated
 
@@ -34,7 +34,7 @@ poundtoken (1GBP) has had only a handful of transfers in five months, and its li
 
 ## 6. Transfer counts are not a reliable measure of use
 
-VGBP shows 265K transfers on Solana, but the ten most recent transfers inspected were tiny, repeated DEX loops consistent with arbitrage bots. GBPe shows a different pattern: many of its transactions are submitted by a single automated address (over 3.9 million transactions), and a sampled transaction was tagged "Gnosis Pay" and executed through a "Spender Module", moving 6.34 GBPe from a user wallet. In a sample of the 100 most recent GBPe transfers (17 Oct 2026, about 17 hours), 65% of distinct transactions used the same Gnosis Pay "Spender Module" method, with a median amount of 11 GBPe, typical of everyday card spending; 24 transfers were dust-sized, similar to bot activity. This is consistent with card payments being the main use of GBPe, although the sample covers less than one day. Transfer counts alone are therefore not a reliable measure of use. Sample data: [data/gnosisscan_gbpe_recent_100_transfers_2026-10-17.csv](data/gnosisscan_gbpe_recent_100_transfers_2026-10-17.csv)
+VGBP shows 265K transfers on Solana, but the ten most recent transfers inspected were tiny, repeated DEX loops consistent with arbitrage bots. GBPe shows the opposite pattern: most of its activity is card payments (Finding 11). The same headline metric, transfer count, therefore hides very different kinds of use.
 
 ## 7. Consumer protection gap
 
@@ -52,16 +52,19 @@ Market caps, volumes, issuer names and supply figures differed across CoinGecko 
 
 CoinGecko daily data (Nov 2025 – Oct 2026) shows tGBP supply rising from ~1.1M to a peak of ~25.5M in mid-2026, then falling to ~20M. Almost all change happened on six days, including a ~19% drop (~£5M redeemed) on 8 August 2026. This step pattern points to a few large institutional mints and redemptions, consistent with the high holder concentration in Finding 4. USD market cap also moves with the GBP/USD exchange rate, so supply is measured in tokens (≈ GBP). Daily data: [data/coingecko_tgbp_daily_2025-11-12_to_2026-10-15.csv](data/coingecko_tgbp_daily_2025-11-12_to_2026-10-15.csv)
 
+## 11. GBPe is mainly used for card payments, but its user base is shrinking
+
+Across 67,494 GBPe transactions on Gnosis over 12 months (17 Oct 2025 – 16 Oct 2026), 78% were Gnosis Pay card payments, executed through the "Spender Module" and sent to a single settlement address. 488 wallets paid by card during the year, 347 of them ten times or more, and the top 10 wallets made only 14% of payments, so usage is broad even though token holdings elsewhere are concentrated. The median payment was 11 GBPe, typical of everyday spending. However, monthly card payments fell 59% between Nov 2025 and Sep 2026, and active paying wallets fell 39% from their December peak. By value, payments were only 13% of transfer volume, because trades are larger. Data: [data/gbpe_v2_transfers_12m.csv](data/gbpe_v2_transfers_12m.csv) · [monthly summary](data/gbpe_monthly_card_payments_2025-10_to_2026-10.csv) · [figure](evidence/fig_gbpe_card_payments.png)
+
 ---
 
-## Open questions for the Dune phase
+## Open questions for the next phase
 
-- Does the Gnosis Pay share of GBPe transactions (65% in a 17-hour sample) hold over the full transaction history?
+- Why did GBPe card payments decline during 2026 (fewer users, product changes, or a shift to other tokens such as EURe)?
 - What share of VGBP transfers on Solana is bot-like, measured over a full period rather than a small sample?
 - How has each token's supply changed over time, across all chains, including GBPe's migration from its v1 to v2 contract?
-- How much activity is DEX trading versus wallet-to-wallet transfers?
-- How does GBPe compare with Monerium's euro token (EURe), issued with the same technology?
+- How does GBPe card usage compare with Monerium's euro token (EURe), issued with the same technology?
 
 ## Implications for the digital pound debate
 
-Private sterling stablecoins exist but remain small, concentrated and lightly used, and the UK-based ones currently offer limited consumer protection. Their uses also differ sharply: one token's activity looks bot-driven, another's looks like card payments. This supports the case for clear regulation of sterling stablecoins, and raises the question of whether private stablecoins alone can provide the public-money role that a digital pound would serve.
+Private sterling stablecoins exist but remain small, concentrated and lightly used, and the UK-based ones currently offer limited consumer protection. Their uses also differ sharply: one token's activity looks bot-driven, while another is used mainly for everyday card payments by a small but recurring group of users. This shows that a sterling stablecoin can support real retail payments, but also that such use is currently tiny and not growing. This supports the case for clear regulation of sterling stablecoins, and raises the question of whether private stablecoins alone can provide the public-money role that a digital pound would serve.
