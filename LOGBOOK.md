@@ -220,8 +220,6 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Other transfers were DEX and aggregator trades (CoW, LiFi, Uniswap, RelayRouter); 24 were dust transfers below 0.001 GBPe, similar to bot activity seen for VGBP.
 - Limitation: classification relies on the method identifier matching the sampled Gnosis Pay transaction; covers 17 hours only.
 
-
-
 **GBPe card payments over 12 months (full-period analysis)**
 - Collected all GBPe v2 transfers on Gnosis from the public Blockscout API using Google Colab (Dune query creation is not available on the free plan). Window: 17 Oct 2025 – 16 Oct 2026. 501 duplicate rows from API pagination were removed, leaving 84,382 transfers in 67,494 distinct transactions.
 - Data: [data/gbpe_v2_transfers_12m.csv](data/gbpe_v2_transfers_12m.csv) · Monthly summary: [data/gbpe_monthly_card_payments_2025-10_to_2026-10.csv](data/gbpe_monthly_card_payments_2025-10_to_2026-10.csv) · Scripts: [scripts/](scripts/)
@@ -232,3 +230,10 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Monerium minted ~3.1M and burned ~3.1M GBPe over the year, about six times the outstanding supply, indicating active on/off-ramping.
 - Correction: the "swap immediately before payment" pattern seen in three cases of the 100-transfer sample occurred in only 29 of 52,662 payments (0.1%) over the full year. It is not a meaningful pattern and is no longer claimed.
 - Evidence: [figure](evidence/fig_gbpe_card_payments.png)
+
+**Literature and regulatory context reviewed**
+- Read and verified 11 sources on stablecoin economics, on-chain measurement, and regulation, including Gorton & Zhang (2023), Lyons & Viswanath-Natraj (2023), Mizrach (2023), the BIS Annual Economic Report 2025 (ch. III), Cong et al. (2023) on wash trading, Daian et al. (2020) on DEX arbitrage bots, and a 2025 systematization of stablecoin designs (arXiv:2506.17622).
+- Regulatory update: the FCA published final rules for qualifying stablecoin issuers on 30 June 2026 (following CP25/14), applying to firms authorised under the new regime from 25 October 2027. Until then, UK issuers such as BCP Technologies and Agant remain under MLR registration only.
+- EU comparison: under MiCA (Regulation (EU) 2023/1114), e-money tokens must be issued by credit or e-money institutions and be redeemable at par at any time, a protection not stated by the UK MLR-registered issuers reviewed here.
+- Benchmark for GBPe: Visa's adjusted stablecoin metrics show retail-sized transactions were under 1% of adjusted stablecoin volume in the 12 months to March 2025. GBPe, where 78% of transactions are card payments, is an unusual case of retail payment use.
+- Mizrach (2023) finds that many stablecoins fail over time, consistent with the dormancy of 1GBP and the contraction of GBPm.
