@@ -34,7 +34,7 @@ poundtoken (1GBP) has had only a handful of transfers in five months, and its li
 
 ## 6. Transfer counts are not a reliable measure of use
 
-VGBP shows 265K transfers on Solana, but the ten most recent transfers inspected were tiny, repeated DEX loops consistent with arbitrage bots. GBPe shows a different pattern: many of its transactions are submitted by a single automated address (over 3.9 million transactions), and a sampled transaction was tagged "Gnosis Pay" and executed through a "Spender Module", moving 6.34 GBPe from a user wallet. This is consistent with card payments, although one sample cannot establish the share of payments. Transfer counts alone are therefore not a reliable measure of use.
+VGBP shows 265K transfers on Solana, but the ten most recent transfers inspected were tiny, repeated DEX loops consistent with arbitrage bots. GBPe shows a different pattern: many of its transactions are submitted by a single automated address (over 3.9 million transactions), and a sampled transaction was tagged "Gnosis Pay" and executed through a "Spender Module", moving 6.34 GBPe from a user wallet. In a sample of the 100 most recent GBPe transfers (16 Oct 2026, about 17 hours), 65% of distinct transactions used the same Gnosis Pay "Spender Module" method, with a median amount of 11 GBPe, typical of everyday card spending; 24 transfers were dust-sized, similar to bot activity. This is consistent with card payments being the main use of GBPe, although the sample covers less than one day. Transfer counts alone are therefore not a reliable measure of use. Sample data: [data/gnosisscan_gbpe_recent_100_transfers_2026-10-16.csv](data/gnosisscan_gbpe_recent_100_transfers_2026-10-16.csv)
 
 ## 7. Consumer protection gap
 
@@ -56,7 +56,7 @@ CoinGecko daily data (Nov 2025 – Oct 2026) shows tGBP supply rising from ~1.1M
 
 ## Open questions for the Dune phase
 
-- What share of GBPe transfers is routed through the Gnosis Pay relayer (0x90830Ed5...), and how much is other activity?
+- Does the Gnosis Pay share of GBPe transactions (65% in a 17-hour sample) hold over the full transaction history?
 - What share of VGBP transfers on Solana is bot-like, measured over a full period rather than a small sample?
 - How has each token's supply changed over time, across all chains, including GBPe's migration from its v1 to v2 contract?
 - How much activity is DEX trading versus wallet-to-wallet transfers?
