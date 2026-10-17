@@ -19,13 +19,14 @@ Public on-chain analysis of sterling stablecoins is limited. An existing communi
 
 - **Verification:** each token checked against blockchain explorers (Etherscan, Gnosisscan, Solscan, Basescan, Celoscan) and official issuer pages, with screenshots in [`evidence/`](evidence/).
 - **Market data:** daily CoinGecko data, saved in [`data/`](data/).
+- **Usage samples:** recent transfers copied from blockchain explorers and classified by transaction type (e.g., card payment, DEX trade, dust), saved in [`data/`](data/).
 - **On-chain analysis:** [Dune](https://dune.com) (DuneSQL). Queries will be published in a `queries/` folder so anyone can check and reuse them.
 
 ## Status
 
 🚧 In progress — started October 2026.
 
-- **Phase 1 (done):** verification of six GBP stablecoins across five blockchains, one year of tGBP market data, and sampled checks of usage (bot-like activity in VGBP; card-payment activity via Gnosis Pay in GBPe). See [Key Findings](FINDINGS.md), the [research logbook](LOGBOOK.md) and the [token register](data/gbp_stablecoin_register.csv).
+- **Phase 1 (done):** verification of six GBP stablecoins across five blockchains, one year of tGBP market data, and sampled checks of usage: bot-like activity in VGBP, and card payments via Gnosis Pay in GBPe (65% of transactions in a sample of 100 recent transfers). See [Key Findings](FINDINGS.md), the [research logbook](LOGBOOK.md) and the [token register](data/gbp_stablecoin_register.csv).
 - **Phase 2 (next):** transaction-level analysis and a public dashboard on Dune.
 
 ## Author
