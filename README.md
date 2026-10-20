@@ -2,6 +2,8 @@
 
 On-chain analysis of UK sterling (GBP) stablecoins — supply, adoption and payments — in the context of the Bank of England digital pound debate.
 
+Preprint: https://ssrn.com/abstract=7627799 (DOI: 10.2139/ssrn.7627799)
+
 ## Why this project
 
 The Bank of England is deciding whether to build a digital pound (a central bank digital currency), while also preparing rules for sterling stablecoins issued by private companies. Dollar-denominated stablecoins dominate the global stablecoin market, which raises the question of what role, if any, sterling stablecoins currently play.
