@@ -289,3 +289,10 @@ A dated record of what was found, how it was verified, and decisions taken.
 **DefiLlama: GBPe live as a stablecoin**
 - DefiLlama's site search for "Monerium" now lists "Monerium GBP emoney" as a Stablecoin, following PR #948. The older token page is still listed separately as a Token.
 - Evidence: [DefiLlama search screenshot](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-22_defillama_search_Monerium_dropdown_after.png)
+
+**DefiLlama: tGBP description corrected**
+- DefiLlama's tGBP entry (peggedData.ts, id "317") described tGBP as "the only British Pound backed stablecoin issued by a UK FCA-registered firm".
+- The FCA Financial Services Register shows two such firms, both with type "MLD cryptoassets": BCP Technologies Ltd (tGBP issuer, FRN 928840, registered since 3 December 2021) and Agant Finance Limited (GBPA issuer, FRN 1037671, registered since 11 February 2026). The claim has therefore been outdated since 11 February 2026.
+- Submitted PR #957 to DefiLlama/peggedassets-server, replacing the claim with the issuer's name and registration type (one line changed). Open as of 22 Oct 2026.
+- Also checked: DefiLlama lists tGBP on eight chains (Ethereum, BNB Chain, Base, Polygon, Avalanche, Solana, Arbitrum, Gnosis), the same eight named in the official tGBP contract register (13 Oct entry). The addresses were not checked against the register.
+- Evidence: [FCA register: Agant](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-22_fca_register_agant_1037671.png) · [FCA register: BCP](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-22_fca_register_bcp_928840.png) · [PR #957 screenshot](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-22_defillama_pr957_opened.png) · [Live PR](https://github.com/DefiLlama/peggedassets-server/pull/957)
