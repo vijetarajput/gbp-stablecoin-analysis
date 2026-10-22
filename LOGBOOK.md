@@ -269,3 +269,21 @@ A dated record of what was found, how it was verified, and decisions taken.
 - GBPe is not listed on CoinPaprika (API returns not found), which Dune's curated price tables require. A 2024 attempt to add GBPe to Dune prices (spellbook PR #5898) was closed for this reason. Dune USD valuations of GBPe should therefore not rely on curated prices.
 - Dune removed its stablecoin models from the public Spellbook in July 2026 (PR #9865), consistent with the 13 Oct finding that curated stablecoin tables are Enterprise-only.
 - Related contribution: spellbook PR #10090 adds Monerium EURe v2 contracts to Dune's price tables on six chains (open, all checks passed). Relevant to the open question comparing GBPe with EURe.
+
+---
+
+## 22 October 2026
+
+**GBPA: other chains verified**
+- DefiLlama lists GBPA on five chains (Ethereum, Arc, Base, Solana, Tempo). The addresses in its code (peggedData.ts, checked 22 Oct) match Agant's official documentation (docs.agant.io, "Networks" page), which states that GBPA is deployed on exactly these five chains and uses LayerZero for cross-chain messaging.
+- Ethereum, Base and Arc share the same address: 0xbBe6aAB0Ed76e90AeA0d1cd978EC231c8AdCDF8b.
+- Each chain was checked on its own explorer. All use 6 decimals, and supply matches DefiLlama:
+  - Base (Basescan): Agant GBP, 250,010.8417 supply, 3 holders.
+  - Solana (Solscan): DYoCmA91VE8REbWNw3kM736PN7vv97qc2jr5wmUbuNtZ, Token-2022 program, 25,014.724655 supply, 2 holders, 15 transfers.
+  - Arc (explorer.arc.io): Agant GBP, 575,218.374 supply, 129 holders, 5,038 transfers.
+  - Tempo (explore.tempo.xyz): 0x20C0000000000000000000000a6Da882d075a4C3, TIP-20, currency GBP, 50,001 supply. The ISSUER role is held by 0x5575151bf6076129d0729c0f40d967d41df34a63, which Agant's docs list as the Tempo OFT address.
+- Conclusion: DefiLlama's GBPA entry is correct; no change needed.
+- Observation: GBPA activity appears concentrated on Arc (129 holders), compared with 2 holders on Ethereum (13 Oct) and 2 on Solana.
+
+**DefiLlama: GBPe live as a stablecoin**
+- DefiLlama's site search for "Monerium" now lists "Monerium GBP emoney" as a Stablecoin, following PR #948. The older token page is still listed separately as a Token.
