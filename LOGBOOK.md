@@ -237,3 +237,35 @@ A dated record of what was found, how it was verified, and decisions taken.
 - EU comparison: under MiCA (Regulation (EU) 2023/1114), e-money tokens must be issued by credit or e-money institutions and be redeemable at par at any time, a protection not stated by the UK MLR-registered issuers reviewed here.
 - Benchmark for GBPe: Visa's adjusted stablecoin metrics show retail-sized transactions were under 1% of adjusted stablecoin volume in the 12 months to March 2025. GBPe, where 78% of transactions are card payments, is an unusual case of retail payment use.
 - Mizrach (2023) finds that many stablecoins fail over time, consistent with the dormancy of 1GBP and the contraction of GBPm.
+
+
+---
+
+## 18 October 2026
+
+**DefiLlama coverage gap**
+- DefiLlama tracked tGBP and GBPA as stablecoins, but GBPe appeared only as a token page, while Monerium's EURe was tracked as a stablecoin.
+- Submitted PR #948 to DefiLlama/peggedassets-server, adding GBPe on six chains with addresses from Monerium's token documentation. Merged 20 Oct 2026. Record and evidence: [vijeta-research/open-source-contributions/defillama](https://github.com/vijetarajput/vijeta-research/tree/main/open-source-contributions/defillama)
+
+---
+
+## 20 October 2026
+
+**DefiLlama cross-checked against this register**
+- GBPA: DefiLlama shows ~1.9M in total, confirming the 16 Oct figure from the @rchen8 dashboard. By chain: Ethereum 1.0M, Arc 575,218, Base 250,011, Tempo 50,001, Solana 25,015. The Ethereum figure matches Etherscan (1,000,102; 6 decimals). Arc supply rose 53% over 30 days. The register lists only Ethereum; the other chains are not yet verified on their own explorers.
+- VGBP: DefiLlama's total of 126,595.21 matches this register exactly (Solana 72,689.71, Celo 28,606.18, Base 25,299.32).
+- Correction: the 15 Oct entry stated that VGBP is deployed on exactly three chains. DefiLlama also lists an Ethereum contract (0x34C9C643Becd939c950bB9F141E35777559817CB), and Etherscan confirms it is VNX British Pound (VGBP), 18 decimals, with zero supply and zero holders. VGBP tokens are held on exactly three chains, but a fourth contract exists. Not added to the register because it holds no tokens.
+- GBPe chains: Monerium's token documentation now lists GBPe v2 on six chains (Ethereum, Gnosis, Polygon, Arbitrum, Base, Linea), all with 18 decimals. The 13 Oct entry listed three besides Gnosis.
+
+**GBPe minting route**
+- Monerium's help centre states that it does not currently offer GBP IBANs (help.monerium.com/article/12-gbpe-ibans), so GBPe cannot be minted by a customer's GBP bank transfer; users obtain it by swapping, for example on Gnosis. Corrected in DefiLlama via PR #949 (merged 22 Oct 2026).
+- Open question: the 17 Oct entry described ~3.1M minted and ~3.1M burned over 12 months as active on/off-ramping. Given that there are no customer GBP IBANs, the source of these mints and burns (for example Monerium or Gnosis Pay settlement) is not yet verified.
+
+---
+
+## 21 October 2026
+
+**Price data coverage on Dune**
+- GBPe is not listed on CoinPaprika (API returns not found), which Dune's curated price tables require. A 2024 attempt to add GBPe to Dune prices (spellbook PR #5898) was closed for this reason. Dune USD valuations of GBPe should therefore not rely on curated prices.
+- Dune removed its stablecoin models from the public Spellbook in July 2026 (PR #9865), consistent with the 13 Oct finding that curated stablecoin tables are Enterprise-only.
+- Related contribution: spellbook PR #10090 adds Monerium EURe v2 contracts to Dune's price tables on six chains (open, all checks passed). Relevant to the open question comparing GBPe with EURe.
