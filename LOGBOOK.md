@@ -284,6 +284,8 @@ A dated record of what was found, how it was verified, and decisions taken.
   - Tempo (explore.tempo.xyz): 0x20C0000000000000000000000a6Da882d075a4C3, TIP-20, currency GBP, 50,001 supply. The ISSUER role is held by 0x5575151bf6076129d0729c0f40d967d41df34a63, which Agant's docs list as the Tempo OFT address.
 - Conclusion: DefiLlama's GBPA entry is correct; no change needed.
 - Observation: GBPA activity appears concentrated on Arc (129 holders), compared with 2 holders on Ethereum (13 Oct) and 2 on Solana.
+- Evidence: [Basescan](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-22_basescan_gbpa_verification.png) · [Solscan](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-22_solscan_gbpa_verification.png) · [Arc explorer](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-22_arcexplorer_gbpa_verification.png) · [Tempo explorer](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-22_tempoexplorer_gbpa_verification.png) · [Agant docs](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-22_agant_docs_gbpa_networks.png)
 
 **DefiLlama: GBPe live as a stablecoin**
 - DefiLlama's site search for "Monerium" now lists "Monerium GBP emoney" as a Stablecoin, following PR #948. The older token page is still listed separately as a Token.
+- Evidence: [DefiLlama search screenshot](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-22_defillama_search_Monerium_dropdown_after.png)
