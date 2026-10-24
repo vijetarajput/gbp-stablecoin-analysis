@@ -296,3 +296,19 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Submitted PR #957 to DefiLlama/peggedassets-server, replacing the claim with the issuer's name and registration type (one line changed). Open as of 22 Oct 2026.
 - Also checked: DefiLlama lists tGBP on eight chains (Ethereum, BNB Chain, Base, Polygon, Avalanche, Solana, Arbitrum, Gnosis), the same eight named in the official tGBP contract register (13 Oct entry). The addresses were not checked against the register.
 - Evidence: [FCA register: Agant](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-22_fca_register_agant_1037671.png) · [FCA register: BCP](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-22_fca_register_bcp_928840.png) · [PR #957 screenshot](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-22_defillama_pr957_opened.png) · [Live PR](https://github.com/DefiLlama/peggedassets-server/pull/957)
+
+---
+
+## 24 October 2026
+
+**tGBP: contract addresses verified**
+- The official tGBP contract register (tokenisedgbp.com, "Contract Register" section) lists eight chains and links each to its explorer: Ethereum, Base, Arbitrum, Polygon, BNB Chain and Avalanche at 0x27f6c8289550fce67f6b50bed1f519966afe5287; Solana at 2zMqyX4AYCk6mgy5UZ2S7zUaLxwERhK5WjqDzkPPbSpW; Gnosis Chain at 0x1f34490f8e8e776ffc547b39b864364035eaf44f.
+- DefiLlama's tGBP entry (peggedData.ts, id "317", checked 24 Oct) uses exactly these addresses on the same eight chains. No change needed.
+- PR #957: the CodeRabbit review found no actionable comments ("Merge Risk: Minimal"; all checks passed). Awaiting maintainer review as of 24 Oct.
+- Evidence: [tGBP contract register](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-24_tokenisedgbp_contract_register.png)
+
+**CoinPaprika coverage (needed for Dune price tables)**
+- GBPA: not listed. A search for "agant" returned only an unrelated, inactive "AgAnt Token" (AGANT, BEP20); a search for "gbpa" returned nothing.
+- tGBP: listed as "tgbp-tokenised-gbp" (active). Spellbook's price tables (checked 24 Oct, eight chain files) do not yet include tGBP.
+- Data-quality note: CoinPaprika lists tGBP's ERC20 and BEP20 addresses as 0x27f6c8289550fce67f6b50bedf1519966afe5287, with two characters transposed ("...bedf15..." instead of "...bed1f5..."). Its "Other" entries show the correct address. This is the same transposition found in the @duneuk Dune query on 15 Oct, which may have been copied from this listing (not confirmed).
+- Evidence: [CoinPaprika search](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/dune/evidence/2026-10-24_coinpaprika_tgbp_search.png)
