@@ -314,3 +314,11 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Impact check (CoinPaprika contracts API, 24 Oct): looking up the correct Ethereum address (api.coinpaprika.com/v1/contracts/eth-ethereum/0x27f6c8289550fce67f6b50bed1f519966afe5287) returns "contract not found", while the transposed address (.../0x27f6c8289550fce67f6b50bedf1519966afe5287) returns Tokenised GBP with price and volume data. Anyone resolving tGBP by its real contract address on CoinPaprika therefore gets no result.
 - Evidence: [CoinPaprika search](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/dune/evidence/2026-10-24_coinpaprika_tgbp_search.png) · [Correct address: not found](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/dune/evidence/2026-10-24_coinpaprika_contract_correct_not_found.png) · [Transposed address: resolves](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/dune/evidence/2026-10-24_coinpaprika_contract_typo_resolves.png)
 - Reported to the issuer (BCP Technologies Ltd) by email on 24 Oct 2026, using the contact address listed on the FCA register; the minting enquiry address shown on tokenisedgbp.com (info@bcpmarkets.co.uk) bounced as non-existent, and this was mentioned in the report. An automated acknowledgment was received (support request 5021). Awaiting a reply.
+
+---
+
+## 30 October 2026
+
+**DefiLlama: PR #957 merged**
+- PR #957 (tGBP description correction, 22 Oct entry) was merged into DefiLlama/peggedassets-server on 29 Oct 2026 (merge commit 918b79a). DefiLlama's live code (peggedData.ts, checked 30 Oct) now names BCP Technologies Ltd and its FCA registration type, and no longer contains the "only ... FCA-registered firm" claim.
+- Evidence: [PR #957 merged](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-30_defillama_pr957_merged.png) · [Live PR](https://github.com/DefiLlama/peggedassets-server/pull/957)
