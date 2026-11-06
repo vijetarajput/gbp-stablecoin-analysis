@@ -329,3 +329,13 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Open question: Camino is mentioned by Monerium but no EURe address is listed, and it is not on DefiLlama.
 - Description: DefiLlama described Monerium as "licensed and regulated by the Financial Supervisory Authority of Iceland". Monerium's EURe MiCA white paper names its supervisor as the Financial Supervisory Authority of the Central Bank of Iceland. Submitted PR #967 updating that phrase (one line changed). Open as of 30 Oct 2026.
 - Evidence: [DefiLlama EURe description (before)](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-30_defillama_eure_description_before.png) · [DefiLlama EURe chains](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-30_defillama_eure_chains.png) · [Monerium white paper](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-30_monerium_eure_whitepaper_supervisor.png) · [PR #967 screenshot](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-10-30_defillama_pr967_opened.png) · [Live PR](https://github.com/DefiLlama/peggedassets-server/pull/967)
+
+
+---
+
+## 6 November 2026
+
+**DefiLlama: PR #967 merged**
+- PR #967 (EURe description update, 30 Oct entry) was merged into DefiLlama/peggedassets-server on 6 Nov 2026. DefiLlama's live code (peggedData.ts, checked 6 Nov) now describes Monerium as authorised and supervised by the Financial Supervisory Authority of the Central Bank of Iceland, and no longer contains the outdated "Financial Supervisory Authority of Iceland" wording.
+- All four DefiLlama pull requests from this project (#948, #949, #957, #967) have now been merged.
+- Evidence: [PR #967 merged](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-11-06_defillama_pr967_merged.png) · [Live PR](https://github.com/DefiLlama/peggedassets-server/pull/967)
