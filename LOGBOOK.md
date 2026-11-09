@@ -356,3 +356,14 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Note for the paper revision: GBPm is also deployed on Monad (about 92K tokens on 6 Nov), whereas the paper reports GBPm on Celo only.
 - Open question: whether the empty Monad contract in Mento's package is a planned replacement or an error; this could be raised with Mento as a question.
 - Evidence: [Monadscan: active contract](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-11-06_monadscan_gbpm_0x39bb_live.png) · [Monadscan: empty contract](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/defillama/evidence/2026-11-06_monadscan_gbpm_0xddf0_empty.png)
+
+---
+
+## 9 November 2026
+
+**Dune: tGBP added to price tables (PR #10124, draft)**
+- Spellbook's curated price tables did not include tGBP on any chain (checked 24 Oct 2026), although tGBP has an active CoinPaprika id (tgbp-tokenised-gbp).
+- Opened spellbook PR #10124 (draft), adding one tGBP line to each of seven chain files: Ethereum, Base, Arbitrum, Polygon, BNB Chain and Avalanche at 0x27f6c8289550fCE67f6B50BeD1F519966aFE5287, and Gnosis at 0x1F34490F8e8E776FFc547b39B864364035Eaf44F.
+- Addresses follow the official tGBP contract register (24 Oct entry). Decimals were checked on each chain's explorer on 9 Nov: 18 on all seven chains. Supply on the smaller chains at the time: Base 5,332,168; Polygon 67,969; Arbitrum 42,246; BNB Chain 12,617; Gnosis 1,485; Avalanche 16.
+- The diff against upstream main was checked file by file: one tGBP line per file (+7, −3, where three files had a blank line replaced). Solana was not included because its prices file uses a different format.
+- Evidence: [PR #10124 opened](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/dune/evidence/2026-11-09_dune_pr10124_opened.png) · [Live PR](https://github.com/duneanalytics/spellbook/pull/10124)
