@@ -367,3 +367,36 @@ A dated record of what was found, how it was verified, and decisions taken.
 - Addresses follow the official tGBP contract register (24 Oct entry). Decimals were checked on each chain's explorer on 9 Nov: 18 on all seven chains. Supply on the smaller chains at the time: Base 5,332,168; Polygon 67,969; Arbitrum 42,246; BNB Chain 12,617; Gnosis 1,485; Avalanche 16.
 - The diff against upstream main was checked file by file: one tGBP line per file (+7, −3, where three files had a blank line replaced). Solana was not included because its prices file uses a different format.
 - Evidence: [PR #10124 opened](https://github.com/vijetarajput/vijeta-research/blob/main/open-source-contributions/dune/evidence/2026-11-09_dune_pr10124_opened.png) · [Live PR](https://github.com/duneanalytics/spellbook/pull/10124)
+
+
+---
+
+## 22 November 2026
+
+**FCA Register: Agant Finance Ltd (GBPA) and BCP Technologies Ltd (tGBP)**
+- Agant Finance Ltd (FRN 1037671) and BCP Technologies Ltd (FRN 928840) are both registered on the FCA Register under the Money Laundering Regulations as cryptoasset businesses. The FCA Register states that the Financial Ombudsman Service and the Financial Services Compensation Scheme cannot consider claims about them.
+- Difference: Agant's entry carries a requirement restricting it to retail services; BCP's entry shows no retail restriction, only a direction to give the FCA two months' notice before a new service.
+- Evidence: 2026-11-22_FCA-register_Agant-FRN1037671.png · 2026-11-22_FCA-register_BCP-FRN928840.png
+
+**VGBP on Ethereum: empty contract**
+- The VGBP contract on Ethereum shows 0 supply and 0 holders on Etherscan (checked 22 Nov).
+- Evidence: 2026-11-22_etherscan_vgbp_ethereum_contract.png
+
+**Dune PRs #10090 and #10124: status check, no change**
+- Both open, no reviews. Checks pass (#10090: 9 successful, 2 skipped; #10124: 8 successful, 2 skipped). Merge is blocked only by "review required". #10090 carries the label ready-for-review; #10124 still carries WIP.
+- No action taken.
+
+---
+
+## 25 November 2026
+
+**BoE and FCA joint approach document: overseas issuers and recognition criteria**
+- The Bank of England and FCA joint document on systemic stablecoin issuers (bankofengland.co.uk/paper/2026/boe-and-fcas-approach-to-joint-regulation-of-systemic-stablecoin-issuers) includes consultation questions. Table B (section 2.2) states that overseas-issued stablecoins "will be captured through the Admissions and Disclosure Designated Activities Regime" and as regulated activities under the Financial Promotions Order, and that "the FCA will not directly regulate overseas issuance". The Bank can regulate overseas issuers once HMT recognises them as systemic, and requires an overseas issuer of a systemic sterling-denominated stablecoin to establish a legal entity in the UK.
+- Section 3.1: the Recognition Criteria the Bank considers when recommending recognition to HMT include "transaction volumes and values, the nature of transactions, substitutability, interconnectedness and its use by the Bank in the course of its role as a monetary authority".
+- Evidence: 2026-11-25_BoE_joint_overseas.png · 2026-11-25_BoE_joint_systemic-criteria.png
+
+**Scale reference for the paper revision**
+- Exchange rate: Bank of England database, $1 = £0.7548 on 13 Oct 2026 (indicative; the page states the rates are not official).
+- Six-token market capitalisation of $30.2M (13 Oct 2026, CoinGecko coin-level sum) ≈ £22.8M, about 0.057% of the Bank's £40bn temporary issuance guardrail (about 1 in 1,755). Calculation: 30.2M × 0.7548 = 22.79M; 22.79M ÷ 40,000M. The guardrail is used as a scale reference only.
+- Of the Bank's criteria, volumes/values and nature of transactions are covered by the data in this register; substitutability and interconnectedness were not measured directly.
+- Evidence: 2026-11-25_BoE_spot-USD_2026-10-13.png
